@@ -4,6 +4,8 @@
 
 面对这些问题时，我们需要先想一下，它是否存在 XY 问题。
 
+![Problem Solving](images/20220226/problem-solving.jpeg)
+
 ## 什么是 XY 问题？
 
 ### Wikipedia 定义
