@@ -10,7 +10,7 @@
 
 金数据早期时候，人数少，团队是全员 Code Review。每天下午 16:00，大家围绕着一个大屏幕（部分同学远程参与），一起 review 所有的代码变更。
 
-![Team Code Review](images/20220301/team_code_review.jpeg)
+[![Team Code Review](images/20220301/team_code_review_small.jpeg)](images/20220301/team_code_review.jpeg)
 
 图：金数据早期的 Team Code Review (大误)，大约 2016 年
 
@@ -24,7 +24,7 @@
 
 * 随着团队变大，需要花费很长的时间。
 
-![Guinness World Record](images/20220301/guinness_world_record.jpeg)
+[![Guinness World Record](images/20220301/guinness_world_record_small.jpeg)](images/20220301/guinness_world_record.jpeg)
 
 图：🏆 吉尼斯世界纪录 - 最长的 Code Review（真的）
 
