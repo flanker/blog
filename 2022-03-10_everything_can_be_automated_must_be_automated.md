@@ -6,7 +6,7 @@
 
 ## 1. 人工都是会犯错的（Eliminate Manual Error）
 
-![PEBKAC: Problem Exists Between Keyboard And Chair](images/20220313/PEBKAC.jpeg)
+[![PEBKAC: Problem Exists Between Keyboard And Chair](images/20220313/PEBKAC_small.jpeg)](images/20220313/PEBKAC.jpeg)
 
 PEBKAC: Problem Exists Between Keyboard And Chair
 
@@ -62,7 +62,7 @@ Google SRE 团队要求琐事在工作的占比不能超过 50%。如果超过�
 
 程序员的三大美德（the three great virtues of a programmer）之一：懒惰（Laziness）。
 
-![10 minutes vs 10 hours](images/20220313/spend-10-minutes-doing-the-task-manually-vs-spend-10-hours-writing-code-to-automate-it-drake.jpeg)
+[![10 minutes vs 10 hours](images/20220313/spend-10-minutes-doing-the-task-manually-vs-spend-10-hours-writing-code-to-automate-it-drake_small.jpeg)](images/20220313/spend-10-minutes-doing-the-task-manually-vs-spend-10-hours-writing-code-to-automate-it-drake.jpeg)
 
 ## 题图
 
