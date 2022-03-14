@@ -4,7 +4,7 @@
 
 为什么？（2022年了，确定还要问吗？）
 
-## 1. 人工都是会犯错的（Eliminate Manual Error）
+## 1. 💩 人工都是会犯错的（Shit happens）
 
 [![PEBKAC: Problem Exists Between Keyboard And Chair](images/20220313/PEBKAC_small.jpeg)](images/20220313/PEBKAC.jpeg)
 
@@ -18,7 +18,7 @@ PEBKAC: Problem Exists Between Keyboard And Chair
 
 例如，我们要求 git commit message 有可读性，避免错别字（typo）。但即使最细心的开发，也可能某天写了一个 typo，并且最后提交并 merge 进入了主分支。靠人工的来保障没有 typo 是不可能的。一个合理的方式是增加自动检查，按照团队的规范自动驳回不符合规范的 commit。
 
-## 2. 自动化就是知识共享（Knowledge Sharing）
+## 2. 📖 自动化就是知识共享（Knowledge sharing）
 
 新加入团队的开发，搭建本地项目时，一般需要很多步骤。例如安装依赖、安装各种软件包、配置数据库等等。
 
@@ -30,7 +30,7 @@ PEBKAC: Problem Exists Between Keyboard And Chair
 
 在这种情况下，自动化就是文档，完成了团队的知识共享。
 
-## 3. 自动化反映了最新的业务（Tested and Updated）
+## 3. ✨ 自动化反映了最新的业务（Tested and Updated）
 
 可能有些团队说，自动化成本太高，我们可以写个文档说明下。
 
@@ -40,7 +40,7 @@ PEBKAC: Problem Exists Between Keyboard And Chair
 
 自动化，是可以通过自动化测试来保证的（对，用自动化来保证自动化）。其次，自动化是频繁被运行的，所以他的内容所代表的的业务含义一定是最新的。
 
-## 4. 自动化消灭了琐事（Eliminate Toil）
+## 4. 🧹 自动化消灭了琐事（Eliminate Toil）
 
 Google 的 SRE 团队（Site Reliability Engineering 系统可靠性工程师），有几本书来介绍团队的工作方式。
 
@@ -50,7 +50,7 @@ Google SRE 团队要求琐事在工作的占比不能超过 50%。如果超过�
 
 关于琐事的更多信息，强烈建议看一下 Google SRE 的书。
 
-## 5. 自动化有版本控制（Version Control）
+## 5. 🗂 自动化有版本控制（Version Control）
 
 一般的自动化都是通过代码脚本实现的，而代码脚本一般都是文本化的。
 
@@ -58,7 +58,7 @@ Google SRE 团队要求琐事在工作的占比不能超过 50%。如果超过�
 
 例如上面说的搭建开发环境，假如我们有一个步骤，是需要设置某个依赖的配置项。如果新入职的开发同学对此有不解（为什么要改成x？），那他就可以很轻松的通过查看这行代码的提交历史，来获知当时修改这个配置项的原因。（前提是 git commit message 也要写的足够好，不过这是另一个话题了）
 
-## 附加：程序员的三大美德之一 —— 懒惰
+## 附加：🏖 程序员的三大美德之一 —— 懒惰
 
 程序员的三大美德（the three great virtues of a programmer）之一：懒惰（Laziness）。
 
