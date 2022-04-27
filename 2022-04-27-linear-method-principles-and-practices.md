@@ -17,7 +17,7 @@ Linear 方法：原则与实践
 
 Software project management tools should build with the end users – the creators – in mind. Keeping individuals productive is more important than generating perfect reports.
 
-软件项目管理工具的建立应考虑到最终用户--创建者。让个人保持生产力比生成完美的报告更重要。
+软件项目管理工具的建立应考虑到最终用户--创建者。让个体保持生产力比生成完美的报告更重要。
 
 ### Opinionated software
 
@@ -29,7 +29,7 @@ Productivity software should be opinionated. It's the only way the product can t
 
 ### Create momentum – don't sprint
 
-创造动力--不要冲刺
+创造动力 -- 不要冲刺
 
 We should find a cadence and routine of working. In cycles, we decide priorities and assign responsibilities. Our goal is to maintain a healthy momentum with our teams, not rush towards the end.
 
@@ -97,11 +97,11 @@ All projects and work should directly correlate to these goals. Review projects 
 
 ### Work in n-week cycles
 
-以N周为周期开展工作
+以 N 周为周期开展工作
 
 Cycles create healthy routine and focus teams on what needs to happen next. 2-week cycles are the most common in software building. They're short enough to not lose sight of other priorities but long enough to build significant features. Cycles should feel reasonable. Don't overload cycles with tasks and let unfinished items move to the next cycle automatically.
 
-周期创造了健康的常规，并使团队专注于接下来需要发生的事情。2周的周期是软件建设中最常见的。它们足够短，不会忽略其他优先事项，但也足够长，可以建立重要的功能。周期应该感觉合理。不要在周期过载任务，以至于未完成的任务自动进入下一个周期。
+周期创造了健康的流程，并使团队专注于接下来需要发生的事情。2 周的周期是软件构建中最常见的。它们足够短，不会忽略其他优先事项，但也足够长，可以创建重要的功能。周期应该感觉合理。不要在周期中过载任务，以至于未完成的任务自动进入下一个周期。
 
 ### Keep a manageable backlog
 
@@ -109,7 +109,7 @@ Cycles create healthy routine and focus teams on what needs to happen next. 2-we
 
 You don't need to save every feature request or piece of feedback. Important ones will resurface and low priority ones will never get fixed. A more focused backlog makes it easier and faster to plan cycles, and ensures the work will actually get done.
 
-你不需要保存每一个功能请求或反馈信息。重要的会重新出现，而低优先级的则永远不会被修复。一个更有针对性的待办列表可以让你更容易和更快地计划周期，并确保工作能够真正得到完成。
+你不需要保存每一个功能请求或反馈信息。重要的东西会重新出现，而低优先级的则永远不会被修复。一个更有针对性的待办列表可以让你更容易和更快地计划周期，并确保工作能够真正得到完成。
 
 ### Mix feature and quality work
 
@@ -125,7 +125,7 @@ All software has bugs, more than we can ever fix. Include bugs and other fixes a
 
 Each project should have a named owner responsible to own delivery and write the project brief. The same goes for issues. Others should collaborate but responsibility should lie with a single person.
 
-每个项目都应该有一个指定的所有者，负责自己的交付和编写项目简报。对问题也是如此。其他人应该合作，但责任应该在一个人身上。
+每个项目都应该有一个指定的负责人，负责交付和编写项目简报。对问题也是如此。其他人应该协作，但责任应该在一个人身上。
 
 ### Write project specs
 
@@ -133,7 +133,7 @@ Each project should have a named owner responsible to own delivery and write the
 
 Aim for brevity. Short specs are more likely to be read. The purpose of a spec is to briefly communicate the "why", "what" and "how" of the project to the rest of the team. Ideally these short documents force teams to scope out work so priorities are clear and teams avoid building the wrong thing.
 
-力求简洁。简短的规范更有可能被阅读。规范的目的是将项目的 "原因"、"内容"和"方法"简要地传达给团队的其他成员。理想情况下，这些简短的文件迫使团队确定工作范围，以便明确优先次序，避免团队建造错误的东西。
+力求简洁。简短的规范更有可能被阅读。规范的目的是将项目的"原因"、"内容"和"方法"简要地传达给团队的其他成员。理想情况下，这些简短的文件会约束团队确定工作边界，以便明确优先次序，避免团队建造错误的东西。
 
 ### Understand your users
 
