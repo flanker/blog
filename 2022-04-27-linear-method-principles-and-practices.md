@@ -2,9 +2,9 @@
 
 Linear 方法：原则与实践
 
-注：Linear 是一款研发项目管理工具（https://linear.app）。
+注：Linear 是一款研发项目管理工具（[https://linear.app](https://linear.app)）。
 
-* 原文地址：https://linear.app/method/introduction
+* 原文地址：[https://linear.app/method/introduction](https://linear.app/method/introduction)
 * 基本使用 DeepL 翻译，略加调整
 
 ## Principles
