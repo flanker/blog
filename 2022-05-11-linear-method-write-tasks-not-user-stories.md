@@ -16,11 +16,11 @@ The point of writing an issue is to communicate a task. It needs to be clear eno
 
 User stories evolved over twenty years ago as a way to communicate what a customer wanted into product requirements that a software team could deliver. Fast forward to today and a lot of things have changed about how we build software. Customers are tech-savvy enough to articulate basic product requirements. We’ve developed standards for common features such as shopping carts, todo lists, and notifications so there is no need to explain how they should work. The best product and engineering teams understand their users deeply and are familiar with how their product should work.
 
-用户故事是在 20 多年前发展起来的，这种方式可以将客户的要求，转化为软件团队需要交付的产品需求。时至今日，我们构建软件的方式已经发生了很大的变化。对技术精通的客户，可以阐明基本的产品需求。我们已经为常见的功能制定了标准，如购物车、任务列表和通知等，因此没有必要解释它们应该如何工作。最好的产品和工程团队是非常了解他们用户的，并且也熟悉他们的产品应该如何工作。
+用户故事是在 20 多年前发展起来的，这种方式可以将客户的要求，转化为软件团队需要交付的产品需求。时至今日，我们构建软件的方式已经发生了很大的变化。对技术精通的客户，可以阐明基本的产品需求。常见的功能也已经标准化，如购物车、任务列表和消息通知等，因此没有必要过多解释它们。最好的产品和工程团队应该是非常了解用户的，并且也熟悉他们自己的产品应该是什么样子的。
 
 User stories have become a cargo cult ritual that feels good but wastes a lot of resources and time. They’re a roundabout way to describe tasks, obscuring the work to be done. User stories are time-consuming to write and read and can silo engineers into a mechanical role where they code to the issue requirements instead of thinking about the user experience holistically at the product level. One reason user stories are complicated and difficult to scope is because they bring what should be product-level details into the task level. And frankly, they don’t match how we communicate about software in real conversations.
 
-用户故事已经成为一种货物崇拜的仪式，感觉不错，但却浪费了大量的资源和时间。它们是一种描述任务的迂回方式，掩盖了要做的工作。用户故事的编写和阅读都很耗时，而且会使工程师陷入机械化的角色，他们根据问题的要求进行编码，而不是在产品层面上全面地考虑用户体验。用户故事之所以复杂和难以确定范围，是因为它们把本应属于产品层面的细节带到了任务层面。坦率地说，它们与我们在实际对话中对软件的交流方式不一致。
+用户故事已经成为一种仪式崇拜，感觉不错，但却浪费了大量的资源和时间。它们迂回的描述任务，掩盖了要做的工作。用户故事的编写和阅读都很耗时，而且会使工程师陷入机械化，他们根据要求进行编码，而不是在产品层面上全面地考虑用户体验。用户故事之所以复杂和难以确定范围，是因为它们把本应属于产品层面的细节带到了任务层面。坦率地说，它们与我们在实际对话中对软件的交流方式不一致。
 
 ## A better way to write issues
 
@@ -28,7 +28,7 @@ User stories have become a cargo cult ritual that feels good but wastes a lot of
 
 Write clear, simple issues that describe tasks in plain language. Write your own issues. Discuss the user experience at the product and feature level, not the task level. Instead of spending time creating user stories, spend it talking to users and thinking through features before building them.
 
-编写清晰、简单的问题，用平实的语言描述任务。编写你自己的问题。在产品和功能层面讨论用户体验，而不是在任务层面讨论。与其花时间创建用户故事，不如花时间与用户交谈，在构建功能前思考。
+编写清晰、简单的问题，用平实的语言描述任务。自己提交问题。在产品和功能层面讨论用户体验，而不是在任务层面讨论。与其花时间创建用户故事，不如花时间与用户交谈，在构建功能前思考。
 
 ### Describe concrete tasks or problems
 
@@ -36,7 +36,7 @@ Write clear, simple issues that describe tasks in plain language. Write your own
 
 An issue should describe a task with a clear, defined outcome. This could be a piece of code, design, document, or action to be taken. If it’s not a task, then it doesn’t belong in the issue tracker. Maybe it’s a project idea that needs to be fleshed out in a document or conversation or a larger feature that should be broken down into smaller, tangible pieces of work.
 
-一个问题应该描述一个有明确的、确定的结果的任务。这可能是一段代码、设计、文件或要采取的行动。如果它不是一个任务，那么它就不应该被记录到问题列表。也许它是一个想法，需要记录在文档或者发生在对话中，或者是一个较大的功能，应该被分解成较小的、有形的任务。
+问题（Issue）应该描述一个有明确结果的任务。这可能是一段代码、设计、文件或要采取的行动。如果它不是一个任务，那么它就不应该被记录到问题列表。也许它是一个想法，需要记录在文档或者发生在对话中，或者是一个较大的功能，应该被分解成较小的、有形的任务。
 
 There will be exceptions to this rule. For example, before working on a feature you’ll spend time exploring the design and technical approach. You can create placeholder issues in these instances to break down later (e.g. Explore design) or frame it as a deliverable (e.g. Write project spec).
 
@@ -48,7 +48,7 @@ There will be exceptions to this rule. For example, before working on a feature 
 
 Write short and simple issue titles that directly state what the task is. The title should be easy to scan, since most people will read it on a list or board in the context of other issues. Descriptions should be optional–not required–and can include relevant thoughts or context as well as links to deeper discussions. Write only as much as you need to share to perform the task and communicate relevant information to the team.
 
-写短而简单的问题标题，直接说明任务是什么。标题应该容易扫描，因为大多数人都会在列表或黑板上结合其他问题来阅读它。描述应该是可选的，而不是必须的，可以包括相关的想法或背景，以及更深入的讨论的链接。只写你需要分享的内容，以执行任务并向团队传达相关信息。
+写短而简单的问题标题，直接说明任务是什么。标题应该容易扫描，因为大多数人都会在列表或黑板上结合其他问题来阅读它。描述应该是可选的，而不是必须的，可以包括相关的想法或背景，以及更深入的讨论的链接。只写执行任务需要知道的内容，其他相关内容可以直接和团队沟通。
 
 When sharing a feature request or bug report, quote user feedback directly instead of summarizing it. Often, a customer describes the pain point more authentically than you could summarize it and it’s faster to copy and paste, too. Link to the customer conversation so that if more information is needed, it’s easy to get.
 
@@ -56,11 +56,11 @@ When sharing a feature request or bug report, quote user feedback directly inste
 
 ### Write your own issues
 
-自己写自己的问题
+自己提交问题
 
 Everyone on the team should write their own issues. It’s faster and easier for the person who understands how to do the work to write issues describing it. It also sets up your team to do a better job. When you write your own issues, it forces you to think through the problem at a deep level. This creates space to come up with even better approaches and makes it easier to spot shortcuts or missing parts in the plan. The practice also reframes how you approach work entirely. Instead of building to mark a task done or check off a list of requirements, your focus is on the product or project deliverable.
 
-团队中的每个人都应该写自己的问题。让更了解问题的人，写问题描述会更快更容易。这也为你的团队做更好的工作做了准备。当你写你自己的问题时，它迫使你在一个深层次上思考问题。这为提出更好的方法创造了空间，并使你更容易发现计划中的捷径或缺失部分。这种做法也完全重塑了你对待工作的方式。你的重点是产品或项目的可交付性，而不是为了标记任务的完成或核对需求的清单。
+团队中的每个人都应该自己提交问题。让更了解问题的人写问题，会更快更容易。这也为你的团队做更好的工作做了准备。当你自己写问题时，你被迫在深层次上思考问题。这为提出更好的方案创造了空间，并使你更容易发现计划中的捷径或缺失部分。这种做法也完全重塑了你对待工作的方式。你的重点是产品或项目的可交付性，而不是为了标记任务的完成或核对需求的清单。
 
 In some cases, it makes more sense to write issues for others such as when filing a bug report. This should be encouraged with the caveat that issues are written slightly differently. When writing the issue, frame it as an ask or describe the problem. Let the assignee come up with the solution and then rewrite the issue as a task.
 
@@ -75,6 +75,8 @@ Discuss the customer experience at the product level when you spec out projects 
 当你设计项目和建立路线图时，在产品层面上讨论客户体验问题。让整个团队参与这些对话--设计师、工程师和面向客户的人员--以便每个人都能深入了解用户需求、限制和产品要求。然后把工作委托给项目组，并期望他们能够完成。他们会凭直觉理解用户体验，所以你不需要在任务层面上澄清它。
 
 ### ✨ ProTip: How we work at Linear
+
+小提示：我们在 Linear 如何工作
 
 We discuss a feature or project deeply before deciding on an implementation plan. The project owner writes specs and gathers feedback until we feel like we have the right approach. Only then do we start writing code. It’s not uncommon to take a couple weeks to think through a feature before building it but once we’ve come up with the right plan, it’s straight into execution mode. The project owner delegates the work, starting with individuals writing up their own issues.
 
