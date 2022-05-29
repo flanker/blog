@@ -1,5 +1,7 @@
 # 会议是组织的 bug，而不是 feature
 
+![meetings](images/20220526/meetings-meetings-everywhere.jpeg)
+
 ## 理想的组织
 
 目标明确、原则明确、自主运行、高效沟通。
@@ -44,6 +46,8 @@
 
 2. 确定议程
 
+![meeting with no agenda](images/20220526/meeting_with_no_agenda.jpeg)
+
 首先，明确会议的类型。这是一个评审？还是分享？或者头脑风暴？
 
 其次，明确会议的目标。希望达成什么输出。
@@ -51,6 +55,8 @@
 然后，准备会议的时间议程等详细内容。
 
 3. 准备材料
+
+![can you hear me now](images/20220526/can_you_hear_me_now.jpeg)
 
 软材料：如果是方案评审，那么提前发送备选方案。
 
