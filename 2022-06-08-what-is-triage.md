@@ -73,6 +73,8 @@ Triage 这个词，本意是指「分诊」，现在很多医院都有。指的�
 3. P2，24小时内解决
 4. P3，排入产品迭代计划
 
+![Triage one the wall](images/20220608/triage-on-the-wall.jpeg)
+
 ### Triage 的目标
 
 triage 的目标需要是面向外部的。即 Triage 并不是为了服务产研团队更高效的工作，而应该是为了提升对客户的支持和响应，进而提升客户的体验和满意度。
