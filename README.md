@@ -17,7 +17,7 @@
 
 ## Linear Method 中文翻译
 
-[https://flanker.github.io/linear-method-zh-cn/](https://flanker.github.io/linear-method-zh-cn/)
+[https://linear-method.cn/](https://linear-method.cn/)
 
 ## About me
 
