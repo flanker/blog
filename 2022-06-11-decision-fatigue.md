@@ -1,4 +1,4 @@
-# 决策疲劳 (Decision Fatigue)
+# 决策疲劳：为什么决策质量很差以及如何避免
 
 > In decision making and psychology, decision fatigue refers to the deteriorating quality of decisions made by an individual after a long session of decision making.
 
