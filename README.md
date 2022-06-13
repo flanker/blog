@@ -1,4 +1,4 @@
-# [FENG Zhichao's Blog](https://fengzhichao.me)
+# [FENG Zhichao's blog](https://fengzhichao.me)
 
 ## Latest Posts
 
