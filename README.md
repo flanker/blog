@@ -2,6 +2,7 @@
 
 ## Latest Posts
 
+* [如何提问寻求帮助：提供上下文（Context）](2022-07-06-ask-with-context.md) 2022-07-06
 * [卓越程序员一定会做的一件事情：Tasking](2022-06-26-tasking) 2022-06-26
 * [决策疲劳：为什么决策质量很差以及如何避免](2022-06-11-decision-fatigue.md) 2022-06-11
 * [什么是 Triage](2022-06-08-what-is-triage.md) 2022-06-08
