@@ -2,12 +2,19 @@
 <html lang="zh-cn">
   <head>
     <meta charset="utf-8">
-    <title>FENG Zhichao's Blog</title>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <h1><a href="/">FENG Zhichao's Blog</a></h1>
+    <nav>
+      <a href="/">Home</a>
+    </nav>
+    <h1>{{ page.title }}</h1>
     <section>
       {{ content }}
     </section>
+    <footer>
+      &copy; FENG Zhichao
+    </footer>
   </body>
 </html>
