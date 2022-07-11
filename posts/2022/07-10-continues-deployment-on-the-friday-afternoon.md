@@ -78,4 +78,4 @@ CI 是干嘛的，就是给团队提供信心的。
 
 ---
 
-{% include_relative ../../_includes/giscus.md %}
+{% include giscus.md %}
