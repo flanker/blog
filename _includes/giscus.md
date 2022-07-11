@@ -1,3 +1,5 @@
+---
+
 <script src="https://giscus.app/client.js"
         data-repo="flanker/blog"
         data-repo-id="[在此输入仓库 ID]"
