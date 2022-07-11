@@ -1,4 +1,4 @@
----
+<hr>
 
 <script src="https://giscus.app/client.js"
         data-repo="flanker/blog"
