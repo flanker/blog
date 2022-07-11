@@ -75,3 +75,21 @@ CI 是干嘛的，就是给团队提供信心的。
 有了上面这些手段，「星期五下午六点半，要不要上线？」这个问题的答案应该是：
 
 「任何时候，都可以上线。」
+
+---
+
+<script src="https://giscus.app/client.js"
+        data-repo="flanker/blog"
+        data-repo-id="[在此输入仓库 ID]"
+        data-category="[在此输入分类名]"
+        data-category-id="[在此输入分类 ID]"
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
