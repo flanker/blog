@@ -1,5 +1,3 @@
-# FENG Zhichao's blog
-
 ## Latest Posts
 
 * [星期五下午六点半，要不要上线？](posts/2022/07-10-continues-deployment-on-the-friday-afternoon.md) 2022-07-10
