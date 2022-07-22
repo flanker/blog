@@ -1,5 +1,6 @@
 ## Latest Posts
 
+* [如何做一次成功的公开分享](posts/2022/07-20-SCQA-and-six-rehearsals.md) 2022-07-20
 * [星期五下午六点半，要不要上线？](posts/2022/07-10-continues-deployment-on-the-friday-afternoon.md) 2022-07-10
 * [如何提问寻求帮助：提供上下文（Context）](posts/2022/07-06-ask-with-context.md) 2022-07-06
 * [卓越程序员一定会做的一件事情：Tasking](posts/2022/06-26-tasking) 2022-06-26
