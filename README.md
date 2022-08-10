@@ -1,5 +1,6 @@
 ## Latest Posts
 
+* [年中，问自己 10 个问题](posts/2022/08-05-ten-questions.md) 2022-08-05
 * [站在未来去思考](posts/2022/08-01-think-in-the-future.md) 2022-08-01
 * [如何做一次成功的公开分享](posts/2022/07-20-SCQA-and-six-rehearsals.md) 2022-07-20
 * [星期五下午六点半，要不要上线？](posts/2022/07-10-continues-deployment-on-the-friday-afternoon.md) 2022-07-10
