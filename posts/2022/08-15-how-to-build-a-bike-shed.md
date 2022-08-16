@@ -46,6 +46,8 @@
 
 扔掉你脑海里的自行车棚吧，花时间思考下如何修建核反应堆。
 
+![nuclear plant from unsplash](../../images/posts/2022/0815/nicolas-hippert-C82jAEQkfE0-unsplash.jpeg)
+
 ## 相关文章
 
 * [会议是组织的 bug，而不是 feature](./05-26-meetings-are-bugs-not-features.md)
