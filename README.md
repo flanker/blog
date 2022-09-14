@@ -1,5 +1,6 @@
 ## Latest Posts
 
+* [Communication Is NOT Easy](posts/2022/09-11-communication-is-not-easy.md) 2022-09-11
 * [如何修建一个自行车棚](posts/2022/08-15-how-to-build-a-bike-shed.md) 2022-08-15
 * [年中，问自己 10 个问题](posts/2022/08-05-ten-questions.md) 2022-08-05
 * [站在未来去思考](posts/2022/08-01-think-in-the-future.md) 2022-08-01
