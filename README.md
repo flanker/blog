@@ -1,5 +1,6 @@
 ## Latest Posts
 
+* [请举一个实际事例](posts/2022/09-18-give-me-a-fact-please.md) 2022-09-18
 * [长期主义](posts/2022/09-16-longtermism.md) 2022-09-16
 * [Communication Is NOT Easy](posts/2022/09-11-communication-is-not-easy.md) 2022-09-11
 * [如何修建一个自行车棚](posts/2022/08-15-how-to-build-a-bike-shed.md) 2022-08-15
