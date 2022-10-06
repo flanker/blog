@@ -4,13 +4,21 @@ description: "一个 Tech Lead 关于技术、工程实践、项目团队管理�
 theme: minima
 
 plugins:
-  - jekyll-relative-links
-  - jekyll-optional-front-matter
+  - jekyll-coffeescript
   - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-paginate
   - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-relative-links
 
 header_pages:
  - wx-account.md
  - about.md
 
 google_analytics: G-02RKJ0RYRX
+
+titles_from_headings:
+  strip_title: true

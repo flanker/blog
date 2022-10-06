@@ -1,8 +1,4 @@
----
-layout: page
-title: 公众号
-permalink: /wx-account/
----
+# 公众号
 
 所有的文章也会同步在微信公众号： 冯智超的公众号
 

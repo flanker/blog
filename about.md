@@ -1,8 +1,4 @@
----
-layout: page
-title: 关于
-permalink: /about/
----
+# 关于
 
 这里是冯智超的个人网站，我会在这里分享与 Tech Lead 相关的内容。包括：
 
