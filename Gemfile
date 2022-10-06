@@ -1,0 +1,6 @@
+gem 'jekyll'
+gem 'minima'
+gem 'jekyll-relative-links'
+gem 'jekyll-default-layout'
+gem 'jekyll-optional-front-matter'
+gem 'jekyll-readme-index'

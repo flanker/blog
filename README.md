@@ -1,4 +1,4 @@
-## Latest Posts
+## 文章
 
 * [请举一个实际事例](posts/2022/09-18-give-me-a-fact-please.md) 2022-09-18
 * [长期主义](posts/2022/09-16-longtermism.md) 2022-09-16
@@ -22,10 +22,6 @@
 * [我们为什么这样子工作？](posts/2022/02-27_why_we_work.md) 2022-02-27
 * [XY 问题](posts/2022/02-26_xy_problem.md) 2022-02-26
 
-## Linear Method 中文翻译
+## Linear Method 中文版
 
-[https://linear-method.cn/](https://linear-method.cn/)
-
-## About me
-
-[https://github.com/flanker](https://github.com/flanker)
+产品研发的原则和最佳实践： [https://linear-method.cn](https://linear-method.cn)

@@ -1,2 +1,15 @@
-title: "FENG Zhichao's blog"
-description: "记录关于技术、研发、项目、团队等"
+title: "冯智超的个人网站"
+description: "一个 Tech Lead 关于技术、工程实践、项目团队管理、领导力的分享"
+
+theme: minima
+
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-default-layout
+  - jekyll-readme-index
+
+header_pages:
+ - wx-account.md
+ - about.md
+

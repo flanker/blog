@@ -51,4 +51,4 @@ Jotform 的创始人 Aytekin Tank 引用了 Barry Schwartz 的理论，「我们
 ## 参考
 
 * [Focus On Being Helpful Rather than Feeling Motivated](https://medium.com/swlh/focus-on-being-helpful-rather-than-feeling-motivated-5c696f9b8514), by Aytekin Tank
-* [The way we think about work is broken | Barry Schwartz](https://www.youtube.com/watch?v=3B_1itqCKHo)
+* [The way we think about work is broken Barry Schwartz](https://www.youtube.com/watch?v=3B_1itqCKHo), by Barry Schwartz
