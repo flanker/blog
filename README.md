@@ -1,5 +1,6 @@
 ## 文章
 
+* [Empowered Product Team](posts/2022/12-18-empowered-product-team.md) 2022-12-18
 * [如果一件任务没有出现在你的日历中，那么它就不应该存在](posts/2022/11-07-use-calendar.md) 2022-11-07
 * [Eat the Frog! 先吃青蛙](posts/2022/10-22-eat-the-frog-first.md) 2022-10-22
 * [使用有意义的数据来演示你的产品功能](posts/2022/10-15-showcase-with-real-data.md) 2022-10-15
