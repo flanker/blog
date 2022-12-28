@@ -1,5 +1,6 @@
 ## 文章
 
+* [可逆决策和不可逆决策](posts/2022/12-25-reversible-and-irreversible-decisions.md) 2022-12-25
 * [Empowered Product Team](posts/2022/12-18-empowered-product-team.md) 2022-12-18
 * [如果一件任务没有出现在你的日历中，那么它就不应该存在](posts/2022/11-07-use-calendar.md) 2022-11-07
 * [Eat the Frog! 先吃青蛙](posts/2022/10-22-eat-the-frog-first.md) 2022-10-22
