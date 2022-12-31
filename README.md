@@ -1,5 +1,6 @@
 ## 文章
 
+* [创业公司 CEO 的第二阶段任务](posts/2022/12-31-the-second-job-of-startup-ceo.md) 2022-12-31
 * [你如何衡量领导力？](posts/2022/12-29-how-do-you-measure-leadership.md) 2022-12-29
 * [可逆决策和不可逆决策](posts/2022/12-25-reversible-and-irreversible-decisions.md) 2022-12-25
 * [Empowered Product Team](posts/2022/12-18-empowered-product-team.md) 2022-12-18
