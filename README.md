@@ -1,5 +1,6 @@
 ## 文章
 
+* [巴顿将军](posts/2023/07-09-Patton.md) 2023-07-09
 * [A Plan Is Not a Strategy 计划并不是战略](posts/2023/01-15_strategy_vs_plan.md) 2023-01-15
 * [创业公司 CEO 的第二阶段任务](posts/2022/12-31-the-second-job-of-startup-ceo.md) 2022-12-31
 * [你如何衡量领导力？](posts/2022/12-29-how-do-you-measure-leadership.md) 2022-12-29
