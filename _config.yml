@@ -1,7 +1,7 @@
 title: "冯智超的个人网站"
 description: "这里是冯智超的个人网站。我拥有 10 多年的 IT/互联网研发经验，做过程序员、技术咨询师、技术经理，到技术总监.擅长 Web 应用开发、DevOps、技术管理。我会在这里分享一个 Tech Lead 关于技术、工程实践、项目团队管理、领导力的文章。"
 
-theme: minima
+remote_theme: jekyll/minima
 
 minima:
   skin: auto
