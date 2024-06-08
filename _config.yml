@@ -24,4 +24,4 @@ header_pages:
 google_analytics: G-02RKJ0RYRX
 
 titles_from_headings:
-  strip_title: true
+  enabled: false

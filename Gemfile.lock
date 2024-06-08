@@ -100,8 +100,6 @@ GEM
       sass-embedded (~> 1.54)
     jekyll-seo-tag (2.8.0)
       jekyll (>= 3.8, < 5.0)
-    jekyll-titles-from-headings (0.5.3)
-      jekyll (>= 3.3, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (2.4.0)
@@ -223,7 +221,6 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-readme-index
   jekyll-relative-links
-  jekyll-titles-from-headings
   minima!
 
 BUNDLED WITH
