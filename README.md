@@ -1,3 +1,9 @@
+## 项目
+
+* DarkBili B站暗色模式插件 [https://darkbili.com](https://darkbili.com)
+* Chromadb-Admin Chromdb 管理器 [https://chromadb-admin.com](https://chromadb-admin.com)
+* 大模型价格对比 [https://llmprice.cn](https://llmprice.cn)
+
 ## 文章
 
 * [巴顿将军](posts/2023/07-09-Patton.md) 2023-07-09
