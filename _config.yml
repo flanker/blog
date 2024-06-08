@@ -3,6 +3,9 @@ description: "这里是冯智超的个人网站。我拥有 10 多年的 IT/互�
 
 theme: minima
 
+minima:
+  skin: auto
+
 plugins:
   - jekyll-coffeescript
   - jekyll-default-layout
