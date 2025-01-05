@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>冯智超的个人网站</title>
+    <style>
+      /* 现代简洁风格的CSS */
+      :root {
+        --primary-color: #2563eb;
+        --text-color: #1f2937;
+        --bg-color: #ffffff;
+        --secondary-bg: #f3f4f6;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 4rem;
+      }
+
+      .section {
+        margin-bottom: 3rem;
+      }
+
+      .projects,
+      .blog {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      .project-card,
+      .blog-card {
+        background: var(--secondary-bg);
+        padding: 0.5rem 1.5rem;
+        border-radius: 8px;
+        transition: transform 0.2s;
+      }
+
+      .project-card:hover,
+      .blog-card:hover {
+        transform: translateY(-2px);
+      }
+
+      .blog-card h3 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      a {
+        color: var(--primary-color);
+        text-decoration: none;
+      }
+
+      .date {
+        color: #6b7280;
+        font-size: 0.9rem;
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+
+      @media (max-width: 640px) {
+        .projects {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .project-card p {
+        color: #6b7280;
+        margin: 0.5rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>冯智超的个人网站</h1>
+      <p>技术 / 工程 / 管理</p>
+    </header>
+
+    <section class="section">
+      <h2>项目</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>DarkBili: B站暗色模式插件</h3>
+          <p>B站缺失的暗色模式</p>
+          <a href="https://darkbili.com" target="_blank">了解更多 →</a>
+        </div>
+        <div class="project-card">
+          <h3>Chromadb-Admin</h3>
+          <p>Chromdb 向量数据库管理器</p>
+          <a href="https://chromadb-admin.com" target="_blank">了解更多 →</a>
+        </div>
+        <div class="project-card">
+          <h3>llmprice.cn</h3>
+          <p>AI大模型价格对比</p>
+          <a href="https://llmprice.cn" target="_blank">了解更多 →</a>
+        </div>
+        <div class="project-card">
+          <h3>Ahead Cal</h3>
+          <p>简洁日历工具</p>
+          <a href="https://aheadcal.com" target="_blank">了解更多 →</a>
+        </div>
+        <div class="project-card">
+          <h3>Linear Method 中文版</h3>
+          <p>产品研发的最佳实践</p>
+          <a href="https://linear-method.cn" target="_blank">了解更多 →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>文章</h2>
+      <div class="blog">
+        <div class="blog-card">
+          <h3>
+            <a href="/posts/2023/01-15_strategy_vs_plan.html"
+              >A Plan Is Not a Strategy 计划并不是战略</a
+            >
+          </h3>
+          <span class="date">2023-01-15</span>
+        </div>
+
+        <div class="blog-card">
+          <h3>
+            <a href="/posts/2022/10-22-eat-the-frog-first.html"
+              >Eat the Frog! 先吃青蛙</a
+            >
+          </h3>
+          <span class="date">2022-10-22</span>
+        </div>
+
+        <div class="blog-card">
+          <h3>
+            <a href="/posts/2022/08-15-how-to-build-a-bike-shed.html"
+              >如何修建一个自行车棚</a
+            >
+          </h3>
+          <span class="date">2022-08-15</span>
+        </div>
+
+        <div class="blog-card">
+          <h3><a href="/posts/2022/02-26_xy_problem.html">XY 问题</a></h3>
+          <span class="date">2022-02-26</span>
+        </div>
+      </div>
+      <p style="text-align: center; margin-top: 2rem">
+        <a href="/blog">查看更多文章 →</a>
+      </p>
+    </section>
+  </body>
+</html>
