@@ -5,5 +5,3 @@
 扫码订阅，就可以收到新文章的推送。
 
 ![冯智超的公众号](/images/assets/weixin_mp_qrcode.jpeg)
-
-冯智超的公众号
