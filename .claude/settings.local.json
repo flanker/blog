@@ -6,7 +6,9 @@
       "Bash(chmod:*)",
       "Bash(rm:*)",
       "Bash(ls:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(npm run build:*)",
+      "Bash(git add:*)"
     ],
     "deny": []
   }
