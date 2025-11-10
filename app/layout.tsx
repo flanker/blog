@@ -21,8 +21,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <nav className="site-nav">
               <a href="/">首页</a>
               <a href="/posts">文章</a>
-              <a href="/about">关于</a>
               <a href="/wx-account">公众号</a>
+              <a href="https://github.com/flanker/" target="_blank" rel="noopener noreferrer">
+                Github
+              </a>
+              <a href="https://space.bilibili.com/266165600" target="_blank" rel="noopener noreferrer">
+                B站
+              </a>
             </nav>
           </header>
           <main className="site-content">{children}</main>

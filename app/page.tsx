@@ -14,28 +14,45 @@ export default function HomePage() {
         <h2>个人项目</h2>
         <ul>
           <li>
-            <a href="https://darkbili.com/" target="_blank">
-              DarkBili - B站深色模式插件
-            </a>
-          </li>
-          <li>
-            <a href="https://chromadb-admin.com/" target="_blank">
-              Chromadb-Admin - Chromdb 向量数据库管理器
-            </a>
-          </li>
-          <li>
-            <a href="https://llmprice.cn/" target="_blank">
-              大模型价格对比
+            <a href="https://chiqingwa.com/" target="_blank">
+              <div className="project-title">吃青蛙</div>
+              <div className="project-desc">个人目标管理 App</div>
             </a>
           </li>
           <li>
             <a href="https://aheadcal.com/" target="_blank">
-              AheadCal - 简洁日历工具
+              <div className="project-title">AheadCal</div>
+              <div className="project-desc">简洁日历工具</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://darkbili.com/" target="_blank">
+              <div className="project-title">DarkBili</div>
+              <div className="project-desc">B站深色模式插件</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://chromadb-admin.com/" target="_blank">
+              <div className="project-title">Chromadb-Admin</div>
+              <div className="project-desc">Chromdb 向量数据库管理器</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://emojizen.com/" target="_blank">
+              <div className="project-title">EmojiZen</div>
+              <div className="project-desc">emoji 搜索工具</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://framelyapp.com/" target="_blank">
+              <div className="project-title">Framely</div>
+              <div className="project-desc">Chrome 页面截图插件</div>
             </a>
           </li>
           <li>
             <a href="https://linear-method.cn/" target="_blank">
-              Linear Method 中文版 - 产品研发的最佳实践
+              <div className="project-title">Linear Method 中文版</div>
+              <div className="project-desc">产品研发的最佳实践</div>
             </a>
           </li>
         </ul>
