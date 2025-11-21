@@ -91,6 +91,25 @@ body {
   transform: scaleX(1);
 }
 
+.site-nav a.lang-switch {
+  margin-left: auto;
+  padding: 6px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background-color: var(--bg-secondary);
+  transition: all 0.2s ease;
+}
+
+.site-nav a.lang-switch:hover {
+  background-color: var(--accent);
+  color: var(--bg-primary);
+  border-color: var(--accent);
+}
+
+.site-nav a.lang-switch::after {
+  display: none;
+}
+
 .site-content {
   min-height: calc(100vh - 300px);
   padding: 60px 0;

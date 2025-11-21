@@ -13,33 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="zh-CN">
       <GoogleAnalytics gaId="G-02RKJ0RYRX" />
       <body>
-        <div className="container">
-          <header className="site-header">
-            <h1 className="site-title">
-              <a href="/">冯智超的个人网站</a>
-            </h1>
-            <nav className="site-nav">
-              <a href="/">首页</a>
-              <a href="/posts">文章</a>
-              <a href="/wx-account">公众号</a>
-              <a href="https://github.com/flanker/" target="_blank" rel="noopener noreferrer">
-                Github
-              </a>
-              <a href="https://space.bilibili.com/266165600" target="_blank" rel="noopener noreferrer">
-                B站
-              </a>
-            </nav>
-          </header>
-          <main className="site-content">{children}</main>
-          <footer className="site-footer">
-            <p>© 2025 冯智超. All rights reserved.</p>
-            <p>
-              <a href="https://github.com/flanker/" target="_blank" rel="noopener noreferrer">
-                GitHub
-              </a>
-            </p>
-          </footer>
-        </div>
+        {children}
       </body>
     </html>
   );
