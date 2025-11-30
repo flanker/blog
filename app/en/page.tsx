@@ -5,14 +5,21 @@ export default function EnHomePage() {
     <div>
       <section className="intro">
         <p>
-          This is Feng Zhichao's personal website, a blog about Tech Lead, technology, and product development.
-          Topics include development technologies, engineering practices, self-management, team management, and project management.
+          This is Feng Zhichao's personal website, a blog about Tech Lead, technology, and product development. Topics
+          include development technologies, engineering practices, self-management, team management, and project
+          management.
         </p>
       </section>
 
       <section className="projects">
         <h2>Personal Projects</h2>
         <ul>
+          <li>
+            <a href="https://apps.apple.com/us/app/memory-blocks-master/id6755654091" target="_blank">
+              <div className="project-title">Memory Blocks Master</div>
+              <div className="project-desc">Minimalist Casual Puzzle iOS Game</div>
+            </a>
+          </li>
           <li>
             <a href="https://chiqingwa.com/" target="_blank">
               <div className="project-title">Eat The Frog</div>

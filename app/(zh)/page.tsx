@@ -14,6 +14,12 @@ export default function HomePage() {
         <h2>个人项目</h2>
         <ul>
           <li>
+            <a href="https://apps.apple.com/us/app/memory-blocks-master/id6755654091" target="_blank">
+              <div className="project-title">四色方块记忆大师</div>
+              <div className="project-desc">简洁休闲益智 iOS 小游戏</div>
+            </a>
+          </li>
+          <li>
             <a href="https://chiqingwa.com/" target="_blank">
               <div className="project-title">吃青蛙</div>
               <div className="project-desc">个人目标管理 App</div>
