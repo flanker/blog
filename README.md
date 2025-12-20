@@ -15,16 +15,16 @@
 
 ```bash
 # 安装依赖
-npm install
+pnpm install
 
 # 启动开发服务器
-npm run dev
+pnpm dev
 
 # 构建静态网站
-npm run build
+pnpm build
 
 # 部署到 GitHub Pages
-npm run deploy
+pnpm deploy
 ```
 
 ## 内容结构

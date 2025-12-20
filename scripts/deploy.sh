@@ -6,7 +6,7 @@ echo "Starting deployment to GitHub Pages..."
 
 # Check if out directory exists
 if [ ! -d "out" ]; then
-    echo "Error: out directory not found. Please run 'npm run build && npm run export' first."
+    echo "Error: out directory not found. Please run 'pnpm build' first."
     exit 1
 fi
 
