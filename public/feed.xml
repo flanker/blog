@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>冯智超的个人网站</title>
+    <link>https://fengzhichao.me</link>
+    <description>有关Tech Lead、技术、产品开发的内容</description>
+    <language>zh-CN</language>
+    <atom:link href="https://fengzhichao.me/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>解决 GraphQL 生成的类型膨胀问题，提升 Turbopack 的构建速度</title>
+      <link>https://fengzhichao.me/posts/2025-12-21/</link>
+      <guid>https://fengzhichao.me/posts/2025-12-21/</guid>
+      <description>解决 GraphQL 生成的类型膨胀问题，提升 Turbopack 的构建速度 背景 金数据是一个在线表单工具的 SaaS 产品。我们的主要技术栈是，后端通过 Ruby on Rails 提供 GraphQL 接口，前端是 Next.js 的应用。 我们的产品已经有十年的历史了，所以业务模型非常复杂，这也是我们为什么用 GraphQL，GraphQL 的第一个好处，是类型，他强制要求给接口添加类型，这样子配合前端的 typescript，仅仅在类型上我估计就可以避免了 99%的 bug。同时，因为他可以用同一个接口，来适配不同前端（对，我们有 legacy 旧版前端，有新版 next.js 前</description>
+      <pubDate>Sun, 21 Dec 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>《碟中谍》，重复了 8 次，为什么我们还是看不腻？</title>
+      <link>https://fengzhichao.me/posts/2025-07-31-mission_impossible_classic/</link>
+      <guid>https://fengzhichao.me/posts/2025-07-31-mission_impossible_classic/</guid>
+      <description>《碟中谍》，重复了 8 次，为什么我们还是看不腻？ 这个暑假，《碟中谍8：最终清算》上映了。虽然口碑比不上几部前作，但作为系列粉丝的我，还是毫不犹豫地走进了电影院。 其实到了这个阶段，我早就不再用「好不好看」来评价《碟中谍》了。 只要阿汤哥撕下面具，经典音乐响起，对我来说——票价就值回来了。 比如： 撕下面具的瞬间，果然又是伊森·亨特在假扮反派； 分派任务后，设备冷冷提示：「此消息将在五秒后销毁」； 阿汤哥迈开大长腿一路狂奔； 主题曲音乐响起，电影主创和镜头一个接一个快速扫过…… 这些桥段，你早就知道会出现，但当它真的来临时，还是会让人心潮澎湃。 🧑‍🤝‍🧑 伊森·亨特，不只是主角，更像</description>
+      <pubDate>Thu, 31 Jul 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>项目复盘不是简单总结，这里有最容易做错的两件事</title>
+      <link>https://fengzhichao.me/posts/2025-07-13-project_review_mistakes/</link>
+      <guid>https://fengzhichao.me/posts/2025-07-13-project_review_mistakes/</guid>
+      <description>项目复盘不是简单总结，这里有最容易做错的两件事 我们现在的工作，大多数是围绕一个又一个的项目展开的。 一个项目立起来，一群人开始忙，产品、设计、开发、测试、运营、销售，全流程推进，最终上线或交付。 项目结束以后做什么？理想答案当然是复盘。 但现实是： 很多团队要么直接跳过复盘（「上线了就行呗」）； 要么走个流程做了复盘，但实际没什么卵用。 说白了就是，总结归总结，该踩的坑下次还照样踩。 为什么会这样？ 因为很多复盘，看起来有模板、有流程、有结论，但踩了两个常见的坑。 错误一：复盘完了，最后没有一个「真的能执行」的行动计划 这个问题特别普遍。 很多人知道复盘要写一个「Actions」，但写出来的</description>
+      <pubDate>Sun, 13 Jul 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>别再说「讨论一下」：如何拒绝无效会议</title>
+      <link>https://fengzhichao.me/posts/2025-07-10-how_to_avoid_useless_meetings/</link>
+      <guid>https://fengzhichao.me/posts/2025-07-10-how_to_avoid_useless_meetings/</guid>
+      <description>别再说「讨论一下」：如何拒绝无效会议 在工作中，你是否经常听到这句话：「我们拉上谁谁谁开个会讨论一下吧。」 听起来好像要解决问题，实际上很多时候只是把问题「扔到会议里」，并没有带来实质性的推进。会议结束时，大家的脑袋更大了，但问题依然没解。 这些「讨论一下」的会议，常见的三个问题是： 1. 没有目标： 会议开始时没有明确要解决什么问题，聊到哪里算哪里； 2. 信息不对称： 参会人临时了解背景，花一半时间在补课； 3. 没有结论或后续： 会议结束后没人负责收尾，没人知道下一步做什么。 与其「开个会讨论一下」，不如换一种方式让信息流动、推进决策。 那些可以不开会的「会」 其实，很多「讨论」压根不需</description>
+      <pubDate>Thu, 10 Jul 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>《F1：狂飙飞车》: 给车迷的最真实的最好的礼物</title>
+      <link>https://fengzhichao.me/posts/2025-07-05-f1_the_movie/</link>
+      <guid>https://fengzhichao.me/posts/2025-07-05-f1_the_movie/</guid>
+      <description>《F1：狂飙飞车》: 给车迷的最真实的最好的礼物 虽然有些矫情，但是感谢汉密尔顿和布拉德皮特，《F1：狂飙飞车》这部电影，就是是给车迷的一个最真实的礼物。 和 F1 最早的记忆，应该就是 20 年前的央视体育频道了。最早的时候，只有体育频道午间新闻，在讲完足球、NBA 后补充一段，上周日在某某某地举办的某某某大奖赛十分精彩，全场比赛发生多次碰撞、出动三次安全车、7 辆赛车退赛......是的，当时我就印象很深刻，央视对比赛是否精彩的判断，就是撞车多不多事故严重不严重。 后来上海开始举办了 F1，央视也正式开始转播比赛了。这时候逐渐也认识了大舒马赫、小舒马赫、巴里切罗、简森巴顿、马萨，以及还是新</description>
+      <pubDate>Sat, 05 Jul 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>目标之前，先想清楚问题是什么</title>
+      <link>https://fengzhichao.me/posts/2025-06-29-start_with_problem/</link>
+      <guid>https://fengzhichao.me/posts/2025-06-29-start_with_problem/</guid>
+      <description>目标之前，先想清楚问题是什么 又到了半年节点，很多团队开始制定下半年的目标和计划。在产品研发团队中，目标和计划通常会以项目的形式展开。 而在公司层面，资源总是有限的。为了保证资源投向最有价值的方向，各团队会提交项目方案，参与统一的优先级评估。这也是一个重新思考“什么值得做”的好时机。 我们常见的问题：目标设定太快 很多项目的目标，看上去是这样写的： 这类目标虽然方向没错，但太过宽泛，无法评估成效，也缺乏紧迫感。 当然，目标需要有衡量性、有时限，符合基本的 SMART 原则，这是最基础的常识。但比起“怎么写好一个目标”，更重要的问题是：你设这个目标之前，想清楚问题了吗？ 一个好项目，首先要讲得通</description>
+      <pubDate>Sun, 29 Jun 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>巴顿将军</title>
+      <link>https://fengzhichao.me/posts/2023-07-09-Patton/</link>
+      <guid>https://fengzhichao.me/posts/2023-07-09-Patton/</guid>
+      <description>巴顿将军 《巴顿将军》是一部 1970 年的电影，讲述了乔治巴顿将军在第二次世界大战的传奇经历。该片获得了第 43 届奥斯卡最佳影片、最佳导演、最佳男主角等 7 项大奖。 下面这个片段发生在影片后半段，一段非常精彩的将军之间的对话。 1944 年 12月，盟军已经反攻到了比利时。此时德军发动了最后的反扑（阿登反击战），将美军第 101 空降师围困在了比利时巴斯通地区。（没错，就是美剧《兄弟连》第 6 集的剧情） !阿登反击战 盟军被打的猝不及防。盟军总司令艾森豪威尔召开紧急会议，由布拉德利将军电话通知巴顿开会事宜。 !艾森豪威尔紧急会议 接到会议通知后，巴顿就着手准备计划，命令所率部队向三个方</description>
+      <pubDate>Sun, 09 Jul 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>A Plan Is Not a Strategy 计划并不是战略</title>
+      <link>https://fengzhichao.me/posts/2023-01-15_strategy_vs_plan/</link>
+      <guid>https://fengzhichao.me/posts/2023-01-15_strategy_vs_plan/</guid>
+      <description>A Plan Is Not a Strategy 计划并不是战略 很多团队都制定了新的一年的战略规划，包括年度目标、预算以及要做的事情。但是很遗憾，大多数的战略规划都是错误的，只有计划但是没有战略。计划并不是战略。仅仅有一个完美的计划是无法成功的。 「战略规划」这个词是错误的 战略规划（Strategic Planning）这个词现在很流行。但实际上，战略（Strategy）和计划（Plan）是两个东西。 活动 vs 理论 计划是一系列的活动，它是对你可以控制的资源的控制和安排。计划回答了你 Who, What, When, How, How Much 的问题。什么事情、谁来做、什么时间做。 </description>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>创业公司 CEO 的第二阶段任务</title>
+      <link>https://fengzhichao.me/posts/2022-12-31-the-second-job-of-startup-ceo/</link>
+      <guid>https://fengzhichao.me/posts/2022-12-31-the-second-job-of-startup-ceo/</guid>
+      <description>创业公司 CEO 的第二阶段任务 创业公司在发展过程中有三个阶段，CEO 在每个阶段的工作任务是不同的。 来自 YCombinator 的 Ali Rowghani 分享了，作为创业公司的 CEO，在第一阶段和第二阶段的首要任务是什么。 原文： https://www.ycombinator.com/library/3k-what-s-the-second-job-of-a-startup-ceo 第一阶段：创造一个好的产品 在创业公司第一阶段，CEO 的首要工作是创造一个好的产品。什么是好的产品，就是有用户使用它，有用户为其付费。所以在第一阶段，CEO 需要抓紧两个事情：1）销售。CEO 需</description>
+      <pubDate>Sat, 31 Dec 2022 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>你如何衡量领导力？</title>
+      <link>https://fengzhichao.me/posts/2022-12-29-how-do-you-measure-leadership/</link>
+      <guid>https://fengzhichao.me/posts/2022-12-29-how-do-you-measure-leadership/</guid>
+      <description>你如何衡量领导力？ 你是一个好的领导者吗？怎么去衡量？ 肯定不能简单的用「企业是否成功」，或者「公司业绩如何」来判定领导力。来自 YCombinator 的 Ali Rowghani 和大家分享了他是如何通过三件事情来衡量领导力的。 原文： https://www.ycombinator.com/blog/how-do-you-measure-leadership/ 1. 思想和沟通的清晰性 好的领导者会清晰的思考和沟通。首先，他们会花很多时间思考，对于企业什么才是最重要的，确定企业的使命和战略。其次，一旦明确这些问题后，他们就会用最简单有效的语言来表达出来。 Ali 举例的是亚马逊的 Bez</description>
+      <pubDate>Thu, 29 Dec 2022 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>可逆决策和不可逆决策</title>
+      <link>https://fengzhichao.me/posts/2022-12-25-reversible-and-irreversible-decisions/</link>
+      <guid>https://fengzhichao.me/posts/2022-12-25-reversible-and-irreversible-decisions/</guid>
+      <description>可逆决策和不可逆决策 区分可逆决策和不可逆决策，来帮助你快速做出正确的决策 !Decision 2016年，亚马逊创始人贝索斯在给股东的信中，解释了这两种类型的决策（原文）。 可逆和不可逆 第一类决策（Type 1 decision）即不可逆决策（Irreversible Decision）。这类决策是影响非常巨大的。当你做出了这个决策并付之行动后，就无法再回到做决策之前的状态了。不可逆决策就像一个单向门，只能开门走出去，却无法再回到原来的位置了。 假如你是某个足球队的经理，是否要出售一名球员就是不可逆决策。就算你后悔了，这个决策一旦公开就很难撤销了，和球员的关系也无法回到决策之前了。 第二类</description>
+      <pubDate>Sun, 25 Dec 2022 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Empowered Product Team</title>
+      <link>https://fengzhichao.me/posts/2022-12-18-empowered-product-team/</link>
+      <guid>https://fengzhichao.me/posts/2022-12-18-empowered-product-team/</guid>
+      <description>Empowered Product Team !Team 来自 SVPG（Silicon Valley Product Group）的 Marty Cagan 和大家分享了什么是 Empowered Product Team，以及它与 Feature Team 有什么不同。 仅从外部来看，Empowered Product Team 和 Feature Team 非常的相似，他们都是一个独立运行、拥有多种角色的产品研发团队。这些年来，很多最佳实践都倾向于搭建小的自运行团队，比如 Spotify 的 Squad 或者 Amazon 的 Two-Pizza Team。大致上，他们都是一个产品研发团</description>
+      <pubDate>Sun, 18 Dec 2022 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>如果一件任务没有出现在你的日历中，那么它就不应该存在</title>
+      <link>https://fengzhichao.me/posts/2022-11-07-use-calendar/</link>
+      <guid>https://fengzhichao.me/posts/2022-11-07-use-calendar/</guid>
+      <description>如果一件任务没有出现在你的日历中，那么它就不应该存在 大家都知道「重要 vs 紧急」的时间四象限。重要且紧急的问题会打断你手头的工作，所以这类问题不应该太多。重要但不紧急的事情，我们应该有计划的来执行。这些问题如果被遗漏了，未来可能会引来更多的问题。 紧急但不重要的问题，可以授权交由其他人来完成。不重要又不紧急的问题，直接拒绝掉，没有必要再做计划。 最难管理的，就是重要但不紧急的问题。你可能经常遇到过这类问题，是的，这个问题很重要，一定要解决，但不是现在。我现在要处理更紧急的问题，这个我稍后在处理。结果很多人一直救火，工作是很疲于奔命，但最终却没有取得太多成就。 每个人都应该使用日历工具。你应</description>
+      <pubDate>Mon, 07 Nov 2022 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Eat the Frog! 先吃青蛙</title>
+      <link>https://fengzhichao.me/posts/2022-10-22-eat-the-frog-first/</link>
+      <guid>https://fengzhichao.me/posts/2022-10-22-eat-the-frog-first/</guid>
+      <description>Eat the Frog! 先吃青蛙 如果你今天必须要吃一只青蛙，那么你早晨第一件事情就应该是吃掉这只青蛙。 这里说的当然不是真正的去吃青蛙。吃青蛙代表一些非常重要但又非常棘手的问题。先吃青蛙是一种提升效率的方法。在开始每天工作前，首先判断出来什么是最重要并且最棘手的事情，然后将这件事情作为早上第一件事情去做。只有青蛙被吃掉后，才考虑去做其他的事情。 很多人在时间管理上都存在些问题。例如拖延症，总是在最后时刻才发现该做的事情还没有做。或者因为一件事情很困难就一直拖着，结果事情越来越糟。还有些情况是，好像一直忙忙碌碌，但是每天结束的时候却感觉工作没有什么进展。 这些问题都可以通过先吃青蛙的方式改</description>
+      <pubDate>Sat, 22 Oct 2022 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>使用有意义的数据来演示你的产品功能</title>
+      <link>https://fengzhichao.me/posts/2022-10-15-showcase-with-real-data/</link>
+      <guid>https://fengzhichao.me/posts/2022-10-15-showcase-with-real-data/</guid>
+      <description>使用有意义的数据来演示你的产品功能 作为一个产品研发，你需要在各种场合中演示产品功能。 在官网上，新的访问者需要快速了解产品有什么功能、是否解决问题。在更新日志里，你需要给用户讲清楚新的功能有哪些好处。在线销售时，还需要共享屏幕直接给用户操作产品演示功能。 在这些场合中，你都应该使用有意义的业务数据来做演示。 有意义的数据，指的是结合用户行业和场景，做出符合真实业务流程的数据。例如，你准备给一个学校老师解决选修课外兴趣班的需求，那你在演示产品功能的时候，就应该准备一个「真实」的学校，以及相应的班级和学生信息。对于课程信息，也应该是符合业务的数据。比如「巴赫钢琴兴趣班」、「毕加索美术兴趣班」等。</description>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>请举一个实际事例</title>
+      <link>https://fengzhichao.me/posts/2022-09-18-give-me-a-fact-please/</link>
+      <guid>https://fengzhichao.me/posts/2022-09-18-give-me-a-fact-please/</guid>
+      <description>请举一个实际事例 我在面试候选人时，发生过很多次下面的对话： 候选人：我工作有很强的主动性。 我：你可以分享一个在项目上实际发生的事情吗？ 候选人：好的。在上个项目上，我经常主动做一些性能优化、功能优化，有时候也会做一些小工具来提升团队的研发效率。 我：主动做性能优化，有什么实际事例可以分享下吗？ 候选人：就比如我会主动做一些页面的性能优化，降低了服务端响应时间这些。 在这段对话中，候选人一直没有给出「实际事例」。候选人可能有「主动性」的工作方式，但并没有让让面试官直接看到并且认可。 实际事例就是讲故事（Storytelling）。故事需要是一个真实发生的事情，包含了时间、地点、人物、起因、经</description>
+      <pubDate>Sun, 18 Sep 2022 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>长期主义</title>
+      <link>https://fengzhichao.me/posts/2022-09-16-longtermism/</link>
+      <guid>https://fengzhichao.me/posts/2022-09-16-longtermism/</guid>
+      <description>长期主义 !Voyager 1's Pale Blue Dot 长期主义：基于长期的目标或结果而行动或制定决策。 最有名的长期主义者是亚马逊的创始人贝索斯。他创办亚马逊后，给股东的第一封信就提出，亚马逊的一切决策都将是基于长期价值的。 人们会高估一个季度可以完成的事情，也会低估三年可以达成的目标。 眼前的问题是很容易看到的。开发一个新功能、修复一个Bug，这些任务都是你完全可以掌握的东西。由于你对短期任务已经非常擅长，在对其做估算时，也会给出乐观的估算。这种乐观带来的兴奋，会让你高估短期行为带来的价值。 反之，你很难预测长期的未来。三年后的市场是什么样子的？用户在哪里？这些都是 Billion</description>
+      <pubDate>Fri, 16 Sep 2022 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Communication Is NOT Easy</title>
+      <link>https://fengzhichao.me/posts/2022-09-11-communication-is-not-easy/</link>
+      <guid>https://fengzhichao.me/posts/2022-09-11-communication-is-not-easy/</guid>
+      <description>Communication Is NOT Easy 沟通的目的是双方对于某个问题的解决达成一致。 沟通是工作中最难的事情。一个 Engineer 成长为 Tech Lead、Engineering Manager 时，沟通又是很重要的工作内容。 🤷🏻‍♀️ Why it is so hard 📻 1. All commmunication is lossy 所有的沟通都有损耗。 首先从方式上看，除了面对面交流、会议室会议，现在有了越来越多的视频会议、即时聊天工具等沟通方式。不稳定的信号、没有感情的文字，都会带来信息传递的损耗。 其次在沟通中，表达者因为说的内容太多、没有重点等原因，以及听</description>
+      <pubDate>Sun, 11 Sep 2022 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>如何修建一个自行车棚</title>
+      <link>https://fengzhichao.me/posts/2022-08-15-how-to-build-a-bike-shed/</link>
+      <guid>https://fengzhichao.me/posts/2022-08-15-how-to-build-a-bike-shed/</guid>
+      <description>如何修建一个自行车棚 !Bike Shed 一个故事 小镇的居民委员会今天开会，讨论两个议题。 第一个议题，有人提议花 1000万元修建一个核电站，来代替小镇现在使用的锅炉。没有任何委员对此发表意见，经过 5分钟的沉默，结论是需要秘书会后再做一次详细的调研。 第二个议题，有人提议花 1万元修建一个自行车棚。这个议题引发了巨大的讨论。有些委员认为应该用金属的顶棚，因为金属比较结实。有些委员认为应该使用木头的材质，因为木头比较环保。还有些委员在讨论油漆应该刷什么颜色。半个小时后，有议员提出了是否真的需要修建自行车棚，因为目前大多数人是开汽车出行的。又过了半个小时，有人反问大家是否花费了太多时间在此</description>
+      <pubDate>Mon, 15 Aug 2022 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>年中，问自己 10 个问题</title>
+      <link>https://fengzhichao.me/posts/2022-08-05-ten-questions/</link>
+      <guid>https://fengzhichao.me/posts/2022-08-05-ten-questions/</guid>
+      <description>年中，问自己 10 个问题 2022 年过了一半了，你的目标和计划进行的如何？ 昨天看了一篇文章，作者通过回答这 10 个问题来思考。我试了一下确实不错。如果你也想试试的话，下面是这 10 个问题： 1. 年初我给自己定的目标是什么？ 2. 现在的目标还是这些吗？还是说已经改变了？ 3. 有没有什么事是我最近做了的但是感觉不太对的？例如写作、某个项目或者其他任何类型的投入。这件事要继续做吗？不做会怎么样？ 4. 哪些话我已经对自己说腻了？比如「我明天就开始xxx」「我真的不能再xxx」「我发誓我这个星期就xxx」。 5. 有什么事情，我希望在年底之前一定要体验或参与的？ 6. 我现在特别羡慕谁</description>
+      <pubDate>Fri, 05 Aug 2022 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

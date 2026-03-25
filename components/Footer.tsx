@@ -8,7 +8,7 @@ export default function Footer({ lang }: FooterProps) {
   return (
     <footer className="site-footer">
       <p>
-        © 2025 {isEnglish ? "Feng Zhichao" : "冯智超"}. All rights reserved.
+        © {new Date().getFullYear()} {isEnglish ? "Feng Zhichao" : "冯智超"}. All rights reserved.
       </p>
       <p>
         <a href="https://github.com/flanker/" target="_blank" rel="noopener noreferrer">

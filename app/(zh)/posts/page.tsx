@@ -27,7 +27,7 @@ export default async function PostsPage() {
 
   return (
     <section className="all-posts">
-      <h1>全部文章</h1>
+      <h2>全部文章</h2>
       {Object.keys(postsByYear)
         .sort((a, b) => b.localeCompare(a))
         .map((year) => (

@@ -155,3 +155,19 @@ export async function getPostBySlug(slug: string): Promise<PostData | null> {
 export function getPostsByCategory(category: "post" | "draft" | "en"): PostData[] {
   return getAllPosts().filter((post) => post.category === category);
 }
+
+export function stripMarkdown(text: string): string {
+  return text
+    .replace(/^#+\s+/gm, '')        // headings
+    .replace(/\*\*(.+?)\*\*/g, '$1') // bold
+    .replace(/\*(.+?)\*/g, '$1')     // italic
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // links
+    .replace(/!\[([^\]]*)\]\([^)]+\)/g, '$1') // images
+    .replace(/`{1,3}[^`]*`{1,3}/g, '') // code
+    .replace(/^\s*[-*+]\s+/gm, '')   // list markers
+    .replace(/^\s*>\s+/gm, '')       // blockquotes
+    .replace(/\n{2,}/g, ' ')         // multiple newlines
+    .replace(/\n/g, ' ')             // single newlines
+    .replace(/\s{2,}/g, ' ')         // multiple spaces
+    .trim();
+}
