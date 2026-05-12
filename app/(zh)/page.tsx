@@ -1,66 +1,71 @@
 import Link from "next/link";
 
+const projects = [
+  {
+    title: "吃青蛙",
+    desc: "个人目标管理 App",
+    url: "https://chiqingwa.com/",
+  },
+  {
+    title: "记大账",
+    desc: "不记流水，只记真正的大账",
+    url: "https://apps.apple.com/cn/app/%E8%AE%B0%E5%A4%A7%E8%B4%A6/id6757328681",
+  },
+  {
+    title: "Framely",
+    desc: "Chrome 页面截图插件",
+    url: "https://framelyapp.com/",
+  },
+  {
+    title: "DarkBili",
+    desc: "B站深色模式插件",
+    url: "https://darkbili.com/",
+  },
+  {
+    title: "方块记忆王",
+    desc: "简洁休闲益智 iOS 小游戏",
+    url: "https://apps.apple.com/cn/app/%E6%96%B9%E5%9D%97%E8%AE%B0%E5%BF%86%E7%8E%8B/id6755654091",
+  },
+  {
+    title: "EmojiZen",
+    desc: "emoji 搜索工具",
+    url: "https://emojizen.com/",
+  },
+  {
+    title: "AheadCal",
+    desc: "简洁日历工具",
+    url: "https://aheadcal.com/",
+  },
+  {
+    title: "Chromadb-Admin",
+    desc: "Chromdb 向量数据库管理器",
+    url: "https://chromadb-admin.com/",
+  },
+  {
+    title: "Linear Method 中文版",
+    desc: "产品研发的最佳实践",
+    url: "https://linear-method.cn/",
+  },
+];
+
 export default function HomePage() {
   return (
     <div>
       <section className="intro">
-        <p>
-          这里是冯智超的个人网站，这个博客记录了有关Tech Lead、技术、产品开发的内容。
-          内容涵盖开发技术、工程实践、自我管理、团队管理、项目管理等几个方向。
-        </p>
+        <p>关于 Tech Lead、工程实践与产品研发的随笔。</p>
       </section>
 
-      <section className="projects">
+      <section className="projects" id="projects">
         <h2>个人项目</h2>
         <ul>
-          <li>
-            <a href="https://apps.apple.com/us/app/memory-blocks-master/id6755654091" target="_blank" rel="noopener noreferrer">
-              <div className="project-title">四色方块记忆大师</div>
-              <div className="project-desc">简洁休闲益智 iOS 小游戏</div>
-            </a>
-          </li>
-          <li>
-            <a href="https://chiqingwa.com/" target="_blank" rel="noopener noreferrer">
-              <div className="project-title">吃青蛙</div>
-              <div className="project-desc">个人目标管理 App</div>
-            </a>
-          </li>
-          <li>
-            <a href="https://aheadcal.com/" target="_blank" rel="noopener noreferrer">
-              <div className="project-title">AheadCal</div>
-              <div className="project-desc">简洁日历工具</div>
-            </a>
-          </li>
-          <li>
-            <a href="https://darkbili.com/" target="_blank" rel="noopener noreferrer">
-              <div className="project-title">DarkBili</div>
-              <div className="project-desc">B站深色模式插件</div>
-            </a>
-          </li>
-          <li>
-            <a href="https://chromadb-admin.com/" target="_blank" rel="noopener noreferrer">
-              <div className="project-title">Chromadb-Admin</div>
-              <div className="project-desc">Chromdb 向量数据库管理器</div>
-            </a>
-          </li>
-          <li>
-            <a href="https://emojizen.com/" target="_blank" rel="noopener noreferrer">
-              <div className="project-title">EmojiZen</div>
-              <div className="project-desc">emoji 搜索工具</div>
-            </a>
-          </li>
-          <li>
-            <a href="https://framelyapp.com/" target="_blank" rel="noopener noreferrer">
-              <div className="project-title">Framely</div>
-              <div className="project-desc">Chrome 页面截图插件</div>
-            </a>
-          </li>
-          <li>
-            <a href="https://linear-method.cn/" target="_blank" rel="noopener noreferrer">
-              <div className="project-title">Linear Method 中文版</div>
-              <div className="project-desc">产品研发的最佳实践</div>
-            </a>
-          </li>
+          {projects.map((p) => (
+            <li key={p.url}>
+              <a href={p.url} target="_blank" rel="noopener noreferrer">
+                <div className="project-title">{p.title}</div>
+                <div className="project-desc">{p.desc}</div>
+              </a>
+            </li>
+          ))}
         </ul>
       </section>
 

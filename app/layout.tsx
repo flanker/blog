@@ -4,7 +4,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 
 const siteUrl = "https://fengzhichao.me";
 const siteDescription =
-  "这里是冯智超的个人网站，这个博客记录了有关Tech Lead、技术、产品开发的内容。内容涵盖开发技术、工程实践、自我管理、团队管理、项目管理等几个方向";
+  "冯智超的个人网站，记录关于 Tech Lead、工程实践与产品研发的思考与随笔。";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -50,8 +50,17 @@ const jsonLd = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="zh-CN">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Noto+Serif+SC:wght@400;500;600&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <GoogleAnalytics gaId="G-02RKJ0RYRX" />
       <body>
+        <div className="paper-grain" aria-hidden="true" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

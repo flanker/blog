@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Feng Zhichao's Personal Website",
   description:
-    "This is Feng Zhichao's personal website, a blog about Tech Lead, technology, and product development. Topics include development technologies, engineering practices, self-management, team management, and project management.",
+    "Feng Zhichao's notes on tech leadership, engineering practice, and product development.",
 };
 
 export default function EnLayout({ children }: { children: React.ReactNode }) {

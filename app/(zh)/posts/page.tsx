@@ -40,7 +40,7 @@ export default async function PostsPage() {
                 .map((post) => (
                   <li key={post.slug}>
                     <Link href={`/posts/${post.slug}`}>{post.title}</Link>
-                    {post.date && <span className="post-date"> - {post.date}</span>}
+                    {post.date && <span className="post-date">{post.date}</span>}
                   </li>
                 ))}
             </ul>
