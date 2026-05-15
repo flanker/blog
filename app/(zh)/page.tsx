@@ -22,6 +22,11 @@ const projects = [
     url: "https://darkbili.com/",
   },
   {
+    title: "Pianooo",
+    desc: "免费古典钢琴音乐欣赏",
+    url: "https://pianooo.cn/",
+  },
+  {
     title: "方块记忆王",
     desc: "简洁休闲益智 iOS 小游戏",
     url: "https://apps.apple.com/cn/app/%E6%96%B9%E5%9D%97%E8%AE%B0%E5%BF%86%E7%8E%8B/id6755654091",
