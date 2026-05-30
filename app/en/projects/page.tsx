@@ -49,6 +49,11 @@ const projects = [
     desc: "Best Practices for Product Development",
     url: "https://linear-method.cn/",
   },
+  {
+    title: "Smithfile",
+    desc: "Persistent Memory and Identity for AI Coding Agents",
+    url: "https://github.com/flanker/smithfile",
+  },
 ];
 
 export default function EnProjectsPage() {
