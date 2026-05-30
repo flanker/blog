@@ -2,6 +2,11 @@ import Link from "next/link";
 
 const projects = [
   {
+    title: "Smithfile",
+    desc: "让 AI 编程助手拥有持久记忆与身份",
+    url: "https://github.com/flanker/smithfile",
+  },
+  {
     title: "吃青蛙",
     desc: "个人目标管理 App",
     url: "https://chiqingwa.com/",
@@ -50,11 +55,6 @@ const projects = [
     title: "Linear Method 中文版",
     desc: "产品研发的最佳实践",
     url: "https://linear-method.cn/",
-  },
-  {
-    title: "Smithfile",
-    desc: "让 AI 编程助手拥有持久记忆与身份",
-    url: "https://github.com/flanker/smithfile",
   },
 ];
 

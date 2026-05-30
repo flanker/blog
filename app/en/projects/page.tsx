@@ -5,6 +5,11 @@ export const metadata = {
 
 const projects = [
   {
+    title: "Smithfile",
+    desc: "Persistent Memory and Identity for AI Coding Agents",
+    url: "https://github.com/flanker/smithfile",
+  },
+  {
     title: "Eat The Frog",
     desc: "Personal Goal Management App",
     url: "https://chiqingwa.com/",
@@ -48,11 +53,6 @@ const projects = [
     title: "Linear Method (Chinese)",
     desc: "Best Practices for Product Development",
     url: "https://linear-method.cn/",
-  },
-  {
-    title: "Smithfile",
-    desc: "Persistent Memory and Identity for AI Coding Agents",
-    url: "https://github.com/flanker/smithfile",
   },
 ];
 
