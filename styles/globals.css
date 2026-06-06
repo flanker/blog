@@ -251,7 +251,7 @@ li {
   margin: 0;
 }
 
-.projects a {
+.projects ul a {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -266,7 +266,7 @@ li {
   border-bottom: none;
 }
 
-.projects a:hover .project-title {
+.projects ul a:hover .project-title {
   color: var(--accent);
 }
 
@@ -286,6 +286,7 @@ li {
 
 /* ---------- Posts list ---------- */
 
+.projects > a,
 .recent-posts > a {
   display: inline-block;
   margin-top: 16px;
@@ -296,6 +297,7 @@ li {
   text-decoration-color: var(--rule);
 }
 
+.projects > a:hover,
 .recent-posts > a:hover {
   color: var(--text);
   text-decoration-color: var(--text);

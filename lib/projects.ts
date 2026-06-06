@@ -49,7 +49,6 @@ export const projects: Project[] = [
     titleEn: "Xichuang",
     descEn: "A Minimalist, Beautiful Site for Classical Chinese Poetry",
     url: "https://xichuang.ink/",
-    featured: true,
   },
   {
     title: "LLM 价格对比",
@@ -85,6 +84,7 @@ export const projects: Project[] = [
     titleEn: "Pianooo",
     descEn: "Free Classical Piano Music",
     url: "https://pianooo.cn/",
+    featured: true,
   },
   {
     title: "方块记忆王",
