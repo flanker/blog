@@ -106,6 +106,15 @@ body {
   color: var(--text);
 }
 
+.site-nav a[target="_blank"]::after {
+  content: "↗";
+  display: inline-block;
+  margin-left: 3px;
+  font-size: 11px;
+  vertical-align: baseline;
+  color: var(--text-muted);
+}
+
 .site-nav a.lang-switch {
   margin-left: auto;
   color: var(--text-muted);
@@ -375,7 +384,7 @@ li {
 
 .post-header h1 {
   margin-bottom: 8px;
-  font-size: 26px;
+  font-size: 28px;
 }
 
 .post-header time,
