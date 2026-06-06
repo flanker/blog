@@ -8,8 +8,8 @@ export const metadata = {
 export default function ProjectsPage() {
   return (
     <section className="projects">
-      <h1>项目</h1>
-      <p className="projects-intro">
+      <h1>全部项目</h1>
+      <p className="page-intro">
         过去几年我利用业余时间做的一些小项目，多数是自己日常想用却没找到合适工具时的产物。
       </p>
       <ul>

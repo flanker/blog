@@ -28,6 +28,10 @@ export default async function EnPostsPage() {
   return (
     <section className="all-posts">
       <h1>All Posts</h1>
+      <p className="page-intro">
+        Notes I&apos;ve written over the years on tech leadership, engineering practice, and product development — with
+        the occasional stray thought.
+      </p>
       {Object.keys(postsByYear)
         .sort((a, b) => b.localeCompare(a))
         .map((year) => (

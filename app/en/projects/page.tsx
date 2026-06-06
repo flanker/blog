@@ -8,8 +8,8 @@ export const metadata = {
 export default function EnProjectsPage() {
   return (
     <section className="projects">
-      <h1>Projects</h1>
-      <p className="projects-intro">
+      <h1>All Projects</h1>
+      <p className="page-intro">
         A handful of small things I built in my spare time over the past few years — mostly because I wanted to use them
         myself and couldn't find what I needed elsewhere.
       </p>

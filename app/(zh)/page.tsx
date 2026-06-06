@@ -9,7 +9,7 @@ export default function HomePage() {
       </section>
 
       <section className="projects" id="projects">
-        <h2>个人项目</h2>
+        <h2>精选项目</h2>
         <ul>
           {featuredProjects.map((p) => (
             <li key={p.url}>

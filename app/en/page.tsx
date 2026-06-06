@@ -9,7 +9,7 @@ export default function EnHomePage() {
       </section>
 
       <section className="projects" id="projects">
-        <h2>Personal Projects</h2>
+        <h2>Featured Projects</h2>
         <ul>
           {featuredProjects.map((p) => (
             <li key={p.url}>

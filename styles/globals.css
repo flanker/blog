@@ -241,7 +241,7 @@ li {
   text-transform: none;
 }
 
-.projects-intro {
+.page-intro {
   font-size: 16px;
   color: var(--text-soft);
   margin: -8px 0 24px;
@@ -281,8 +281,8 @@ li {
 
 .project-title {
   font-family: var(--font-serif);
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 17px;
   color: var(--text);
 }
 
@@ -353,11 +353,6 @@ li {
 }
 
 /* ---------- All posts ---------- */
-
-.all-posts > h1,
-.all-posts > h2 {
-  margin-bottom: 32px;
-}
 
 .all-posts > div {
   margin-bottom: 32px;

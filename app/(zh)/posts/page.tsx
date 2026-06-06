@@ -27,7 +27,10 @@ export default async function PostsPage() {
 
   return (
     <section className="all-posts">
-      <h2>全部文章</h2>
+      <h1>全部文章</h1>
+      <p className="page-intro">
+        这些年陆陆续续写下的一些随笔，关于 Tech Lead、工程实践与产品研发，也有些只是当时的所思所想。
+      </p>
       {Object.keys(postsByYear)
         .sort((a, b) => b.localeCompare(a))
         .map((year) => (
