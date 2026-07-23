@@ -2,7 +2,7 @@ import { getPublishedPosts } from "@/lib/posts";
 import Link from "next/link";
 
 export const metadata = {
-  title: "文章 - 冯智超的个人网站",
+  title: "写作 - 冯智超的个人网站",
 };
 
 export default async function PostsPage() {
@@ -11,13 +11,9 @@ export default async function PostsPage() {
   const postsByYear = posts.reduce((acc, post) => {
     let year = "Unknown";
     if (post.date) {
-      try {
-        const dateObj = new Date(post.date);
-        if (!isNaN(dateObj.getTime())) {
-          year = dateObj.getFullYear().toString();
-        }
-      } catch (e) {
-        // Keep as Unknown
+      const dateObj = new Date(post.date);
+      if (!isNaN(dateObj.getTime())) {
+        year = dateObj.getFullYear().toString();
       }
     }
     if (!acc[year]) acc[year] = [];
@@ -27,14 +23,14 @@ export default async function PostsPage() {
 
   return (
     <section className="all-posts">
-      <h1>全部文章</h1>
-      <p className="page-intro">
-        这些年陆陆续续写下的一些随笔，关于 Tech Lead、工程实践与产品研发，也有些只是当时的所思所想。
-      </p>
+      <div className="hero">
+        <h1>写作</h1>
+        <p>随手记录一些想法</p>
+      </div>
       {Object.keys(postsByYear)
         .sort((a, b) => b.localeCompare(a))
         .map((year) => (
-          <div key={year}>
+          <div className="year-group" key={year}>
             <h3>{year}</h3>
             <ul className="post-list">
               {postsByYear[year]

@@ -1,3 +1,12 @@
+export type ProjectType = "oss" | "app" | "web" | "extension";
+
+export const projectTypeLabels: Record<ProjectType, { zh: string; en: string }> = {
+  oss: { zh: "开源", en: "Open Source" },
+  app: { zh: "App", en: "App" },
+  web: { zh: "网站", en: "Web" },
+  extension: { zh: "插件", en: "Extension" },
+};
+
 export interface Project {
   title: string;
   desc: string;
@@ -6,6 +15,8 @@ export interface Project {
   titleEn: string;
   /** 描述英文版 */
   descEn: string;
+  /** 项目类型，驱动卡片标签 */
+  type: ProjectType;
   /** 是否在首页精选展示 */
   featured?: boolean;
 }
@@ -13,6 +24,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: "Smithfile",
+    type: "oss",
     desc: "让 AI 编程助手拥有持久记忆与身份",
     titleEn: "Smithfile",
     descEn: "Persistent Memory and Identity for AI Coding Agents",
@@ -21,6 +33,7 @@ export const projects: Project[] = [
   },
   {
     title: "吃青蛙",
+    type: "app",
     desc: "个人目标管理 App",
     titleEn: "Eat The Frog",
     descEn: "Personal Goal Management App",
@@ -29,6 +42,7 @@ export const projects: Project[] = [
   },
   {
     title: "HN Weekly 中文",
+    type: "web",
     desc: "Hacker Newsletter 每周中文翻译",
     titleEn: "HN Weekly Chinese",
     descEn: "Weekly Chinese Translation of Hacker Newsletter",
@@ -37,6 +51,7 @@ export const projects: Project[] = [
   },
   {
     title: "别废话",
+    type: "web",
     desc: "一个职场反废话宣言",
     titleEn: "Biefeihua",
     descEn: "A No-Bullshit Manifesto for the Workplace",
@@ -45,6 +60,7 @@ export const projects: Project[] = [
   },
   {
     title: "西窗",
+    type: "web",
     desc: "极简、重美感的中文古诗词站",
     titleEn: "Xichuang",
     descEn: "A Minimalist, Beautiful Site for Classical Chinese Poetry",
@@ -52,6 +68,7 @@ export const projects: Project[] = [
   },
   {
     title: "LLM 价格对比",
+    type: "web",
     desc: "实时对比主流大模型 API 价格",
     titleEn: "LLM Price",
     descEn: "Real-time API Price Comparison for Major LLMs",
@@ -59,6 +76,7 @@ export const projects: Project[] = [
   },
   {
     title: "记大账",
+    type: "app",
     desc: "不记流水，只记真正的大账",
     titleEn: "Big Ledger",
     descEn: "Track only the big stuff, not every transaction",
@@ -66,6 +84,7 @@ export const projects: Project[] = [
   },
   {
     title: "Framely",
+    type: "extension",
     desc: "Chrome 页面截图插件",
     titleEn: "Framely",
     descEn: "Chrome Screenshot Extension",
@@ -73,6 +92,7 @@ export const projects: Project[] = [
   },
   {
     title: "DarkBili",
+    type: "extension",
     desc: "B站深色模式插件",
     titleEn: "DarkBili",
     descEn: "Dark Mode Extension for Bilibili",
@@ -80,6 +100,7 @@ export const projects: Project[] = [
   },
   {
     title: "Pianooo",
+    type: "web",
     desc: "免费古典钢琴音乐欣赏",
     titleEn: "Pianooo",
     descEn: "Free Classical Piano Music",
@@ -88,6 +109,7 @@ export const projects: Project[] = [
   },
   {
     title: "方块记忆王",
+    type: "app",
     desc: "简洁休闲益智 iOS 小游戏",
     titleEn: "Memory Master",
     descEn: "Minimalist Casual Puzzle iOS Game",
@@ -95,6 +117,7 @@ export const projects: Project[] = [
   },
   {
     title: "EmojiZen",
+    type: "web",
     desc: "emoji 搜索工具",
     titleEn: "EmojiZen",
     descEn: "Emoji Search Tool",
@@ -102,6 +125,7 @@ export const projects: Project[] = [
   },
   {
     title: "AheadCal",
+    type: "web",
     desc: "简洁日历工具",
     titleEn: "AheadCal",
     descEn: "Minimalist Calendar Tool",
@@ -109,6 +133,7 @@ export const projects: Project[] = [
   },
   {
     title: "Chromadb-Admin",
+    type: "oss",
     desc: "Chromdb 向量数据库管理器",
     titleEn: "Chromadb-Admin",
     descEn: "Vector Database Manager for Chromadb",
@@ -116,6 +141,7 @@ export const projects: Project[] = [
   },
   {
     title: "Linear Method 中文版",
+    type: "web",
     desc: "产品研发的最佳实践",
     titleEn: "Linear Method (Chinese)",
     descEn: "Best Practices for Product Development",

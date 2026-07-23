@@ -2,7 +2,7 @@ import { getPublishedPosts } from "@/lib/posts";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Posts - Feng Zhichao's Website",
+  title: "Writing - Feng Zhichao's Website",
 };
 
 export default async function EnPostsPage() {
@@ -11,13 +11,9 @@ export default async function EnPostsPage() {
   const postsByYear = posts.reduce((acc, post) => {
     let year = "Unknown";
     if (post.date) {
-      try {
-        const dateObj = new Date(post.date);
-        if (!isNaN(dateObj.getTime())) {
-          year = dateObj.getFullYear().toString();
-        }
-      } catch (e) {
-        // Keep as Unknown
+      const dateObj = new Date(post.date);
+      if (!isNaN(dateObj.getTime())) {
+        year = dateObj.getFullYear().toString();
       }
     }
     if (!acc[year]) acc[year] = [];
@@ -27,15 +23,14 @@ export default async function EnPostsPage() {
 
   return (
     <section className="all-posts">
-      <h1>All Posts</h1>
-      <p className="page-intro">
-        Notes I&apos;ve written over the years on tech leadership, engineering practice, and product development — with
-        the occasional stray thought.
-      </p>
+      <div className="hero">
+        <h1>Writing</h1>
+        <p>Jotting down ideas as they come</p>
+      </div>
       {Object.keys(postsByYear)
         .sort((a, b) => b.localeCompare(a))
         .map((year) => (
-          <div key={year}>
+          <div className="year-group" key={year}>
             <h3>{year}</h3>
             <ul className="post-list">
               {postsByYear[year]
