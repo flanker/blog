@@ -2,6 +2,7 @@
   "name": "fengzhichao-blog",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@11.15.1",
   "scripts": {
     "dev": "next dev",
     "prebuild": "node scripts/generate-seo.mjs",
