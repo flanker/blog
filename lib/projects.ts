@@ -23,6 +23,15 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "西安交大像素小游戏",
+    type: "web",
+    desc: "樱花道与梧桐大道两关像素小游戏",
+    titleEn: "XJTU Pixel Game",
+    descEn: "A Retro Pixel Browser Game Set on the XJTU Campus",
+    url: "https://xjtugame.com/",
+    featured: true,
+  },
+  {
     title: "Smithfile",
     type: "oss",
     desc: "让 AI 编程助手拥有持久记忆与身份",
