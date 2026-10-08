@@ -1,4 +1,5 @@
-import { getPostBySlug, getAllPosts, stripMarkdown } from "@/lib/posts";
+import { getPostBySlug, getPostsByCategory, getPublishedPosts, stripMarkdown } from "@/lib/posts";
+import RedirectStub from "@/components/RedirectStub";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
@@ -10,7 +11,8 @@ interface PostPageProps {
 }
 
 export async function generateStaticParams() {
-  const posts = getAllPosts();
+  // Chinese posts used to be duplicated under /en/posts/; keep those URLs as redirect stubs.
+  const posts = [...getPostsByCategory("en"), ...getPublishedPosts()];
   return posts.map((post) => ({
     slug: post.slug,
   }));
@@ -22,6 +24,13 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
 
   if (!post) {
     return { title: "Post Not Found" };
+  }
+
+  if (post.category !== "en") {
+    return {
+      title: `${post.title} - Feng Zhichao's Website`,
+      robots: { index: false },
+    };
   }
 
   const description = stripMarkdown(post.content).substring(0, 160);
@@ -43,6 +52,16 @@ export default async function EnPostPage({ params }: PostPageProps) {
 
   if (!post) {
     notFound();
+  }
+
+  if (post.category !== "en") {
+    return (
+      <RedirectStub
+        to={`/posts/${post.slug}/`}
+        message="This post is only available in Chinese."
+        linkText="Read it in Chinese →"
+      />
+    );
   }
 
   const jsonLd = {
@@ -68,7 +87,6 @@ export default async function EnPostPage({ params }: PostPageProps) {
       <header className="post-header">
         <h1>{post.title}</h1>
         {post.date && <time className="post-date">{post.date}</time>}
-        {post.category === "draft" && <span className="draft-badge">Draft</span>}
       </header>
       <div className="post-content" dangerouslySetInnerHTML={{ __html: post.contentHtml || "" }} />
     </article>

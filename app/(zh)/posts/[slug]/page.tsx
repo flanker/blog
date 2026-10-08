@@ -1,4 +1,4 @@
-import { getPostBySlug, getAllPosts, stripMarkdown } from "@/lib/posts";
+import { getPostBySlug, getPublishedPosts, stripMarkdown } from "@/lib/posts";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
@@ -10,7 +10,7 @@ interface PostPageProps {
 }
 
 export async function generateStaticParams() {
-  const posts = getAllPosts();
+  const posts = getPublishedPosts();
   return posts.map((post) => ({
     slug: post.slug,
   }));
@@ -68,7 +68,6 @@ export default async function PostPage({ params }: PostPageProps) {
       <header className="post-header">
         <h1>{post.title}</h1>
         {post.date && <time className="post-date">{post.date}</time>}
-        {post.category === "draft" && <span className="draft-badge">草稿</span>}
       </header>
       <div className="post-content" dangerouslySetInnerHTML={{ __html: post.contentHtml || "" }} />
     </article>

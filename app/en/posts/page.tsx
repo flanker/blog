@@ -1,4 +1,4 @@
-import { getPublishedPosts } from "@/lib/posts";
+import { getPostsByCategory } from "@/lib/posts";
 import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 
@@ -6,12 +6,12 @@ export const metadata = pageMetadata({
   lang: "en",
   title: "Writing on Tech Leadership, Engineering & Product - Feng Zhichao's Website",
   description:
-    "All of Feng Zhichao's writing, archived by year: tech leadership and team management, collaboration and project management, engineering practice, product thinking, and notes on books and films.",
+    "Feng Zhichao's writing in English on tech leadership, engineering practice, and product development. Most posts are written in Chinese and archived on the Chinese side of the site.",
   path: "/en/posts/",
 });
 
 export default async function EnPostsPage() {
-  const posts = getPublishedPosts();
+  const posts = getPostsByCategory("en");
 
   const postsByYear = posts.reduce((acc, post) => {
     let year = "Unknown";
@@ -30,7 +30,9 @@ export default async function EnPostsPage() {
     <section className="all-posts">
       <div className="hero">
         <h1>Writing</h1>
-        <p>Jotting down ideas as they come</p>
+        <p>
+          Jotting down ideas as they come. Most of my writing is in Chinese — <Link href="/posts/">browse it here</Link>.
+        </p>
       </div>
       {Object.keys(postsByYear)
         .sort((a, b) => b.localeCompare(a))
