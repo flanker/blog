@@ -8,6 +8,7 @@ export const metadata = pageMetadata({
   description:
     "冯智超的全部文章，按年份归档。主题包括 Tech Lead 与技术管理、团队协作与项目管理、工程实践与研发效能、产品思考，以及一些读书和观影笔记。",
   path: "/posts/",
+  languages: { zh: "/posts/", en: "/en/posts/" },
 });
 
 export default async function PostsPage() {

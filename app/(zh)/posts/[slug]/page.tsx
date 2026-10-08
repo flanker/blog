@@ -1,4 +1,6 @@
-import { getPostBySlug, getPublishedPosts, stripMarkdown } from "@/lib/posts";
+import { getAdjacentPosts, getPostBySlug, getPublishedPosts, postRedirects, stripMarkdown } from "@/lib/posts";
+import PostNav from "@/components/PostNav";
+import RedirectStub from "@/components/RedirectStub";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
@@ -11,13 +13,15 @@ interface PostPageProps {
 
 export async function generateStaticParams() {
   const posts = getPublishedPosts();
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
+  return [...posts.map((post) => post.slug), ...Object.keys(postRedirects)].map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: PostPageProps): Promise<Metadata> {
   const { slug } = await params;
+  if (postRedirects[slug]) {
+    return { title: "文章已移动 - 冯智超的个人网站", robots: { index: false } };
+  }
+
   const post = await getPostBySlug(slug);
 
   if (!post) {
@@ -39,6 +43,10 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
 
 export default async function PostPage({ params }: PostPageProps) {
   const { slug } = await params;
+  if (postRedirects[slug]) {
+    return <RedirectStub to={postRedirects[slug]} message="这篇文章已移动。" linkText="前往新地址 →" />;
+  }
+
   const post = await getPostBySlug(slug);
 
   if (!post) {
@@ -70,6 +78,7 @@ export default async function PostPage({ params }: PostPageProps) {
         {post.date && <time className="post-date">{post.date}</time>}
       </header>
       <div className="post-content" dangerouslySetInnerHTML={{ __html: post.contentHtml || "" }} />
+      <PostNav lang="zh" {...getAdjacentPosts(getPublishedPosts(), post.slug)} />
     </article>
   );
 }

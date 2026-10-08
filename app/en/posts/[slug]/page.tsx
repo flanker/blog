@@ -1,4 +1,5 @@
-import { getPostBySlug, getPostsByCategory, getPublishedPosts, stripMarkdown } from "@/lib/posts";
+import { getAdjacentPosts, getPostBySlug, getPostsByCategory, getPublishedPosts, stripMarkdown } from "@/lib/posts";
+import PostNav from "@/components/PostNav";
 import RedirectStub from "@/components/RedirectStub";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -89,6 +90,7 @@ export default async function EnPostPage({ params }: PostPageProps) {
         {post.date && <time className="post-date">{post.date}</time>}
       </header>
       <div className="post-content" dangerouslySetInnerHTML={{ __html: post.contentHtml || "" }} />
+      <PostNav lang="en" {...getAdjacentPosts(getPostsByCategory("en"), post.slug)} />
     </article>
   );
 }

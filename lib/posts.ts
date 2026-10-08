@@ -3,10 +3,18 @@ import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
+import { imageSize } from "image-size";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 const draftsDirectory = path.join(process.cwd(), "draft");
 const enDirectory = path.join(process.cwd(), "en");
+const publicDirectory = path.join(process.cwd(), "public");
+
+// Retired post slugs and where they moved; their URLs are kept as noindex redirect stubs.
+export const postRedirects: Record<string, string> = {
+  // Earlier draft of 2022-04-11-important-things, published by mistake
+  "2022-04-06-team-document-platform": "/posts/2022-04-11-important-things/",
+};
 
 export interface PostData {
   id: string;
@@ -151,11 +159,18 @@ export async function getPostBySlug(slug: string): Promise<PostData | null> {
 
   return {
     ...post,
-    contentHtml: resolveRelativeUrls(processedContent.toString(), post, allPosts),
+    contentHtml: addImageAttributes(resolveRelativeUrls(processedContent.toString(), post, allPosts)),
   };
 }
 
-function postUrl(post: PostData): string {
+// Newer and older neighbours of a post within the same list (lists are sorted newest first).
+export function getAdjacentPosts(posts: PostData[], slug: string): { newer?: PostData; older?: PostData } {
+  const index = posts.findIndex((p) => p.slug === slug);
+  if (index === -1) return {};
+  return { newer: posts[index - 1], older: posts[index + 1] };
+}
+
+export function postUrl(post: PostData): string {
   return post.category === "en" ? `/en/posts/${post.slug}/` : `/posts/${post.slug}/`;
 }
 
@@ -204,4 +219,26 @@ export function stripMarkdown(text: string): string {
     .replace(/\n/g, ' ')             // single newlines
     .replace(/\s{2,}/g, ' ')         // multiple spaces
     .trim();
+}
+
+// Give images their intrinsic size (prevents layout shift) and lazy-load all but the first one,
+// which is usually the largest contentful paint.
+function addImageAttributes(contentHtml: string): string {
+  let index = 0;
+
+  return contentHtml.replace(/<img\b([^>]*?)\s*\/?>/g, (match, attrs: string) => {
+    let extra = index++ === 0 ? ' fetchpriority="high"' : ' loading="lazy"';
+    extra += ' decoding="async"';
+
+    const src = attrs.match(/\bsrc="([^"]+)"/)?.[1];
+    if (src?.startsWith("/") && !/\bwidth=/.test(attrs)) {
+      const file = path.join(publicDirectory, decodeURI(src));
+      if (fs.existsSync(file)) {
+        const { width, height } = imageSize(fs.readFileSync(file));
+        if (width && height) extra += ` width="${width}" height="${height}"`;
+      }
+    }
+
+    return `<img${attrs}${extra}>`;
+  });
 }

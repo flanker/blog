@@ -17,6 +17,8 @@ interface PageMetadataOptions {
   ogTitle?: string;
   type?: "website" | "article";
   publishedTime?: string;
+  // Paths of the same page in each language, for hreflang alternates
+  languages?: { zh: string; en: string };
 }
 
 // Next.js replaces (not merges) openGraph/twitter/alternates from parent layouts,
@@ -29,6 +31,7 @@ export function pageMetadata({
   ogTitle = title,
   type = "website",
   publishedTime,
+  languages,
 }: PageMetadataOptions): Metadata {
   const common = {
     title: ogTitle,
@@ -54,6 +57,7 @@ export function pageMetadata({
     },
     alternates: {
       canonical: path,
+      languages: languages && { "zh-CN": languages.zh, en: languages.en, "x-default": languages.zh },
       types: {
         "application/rss+xml": "/feed.xml",
       },

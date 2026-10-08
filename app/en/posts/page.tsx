@@ -8,6 +8,7 @@ export const metadata = pageMetadata({
   description:
     "Feng Zhichao's writing in English on tech leadership, engineering practice, and product development. Most posts are written in Chinese and archived on the Chinese side of the site.",
   path: "/en/posts/",
+  languages: { zh: "/posts/", en: "/en/posts/" },
 });
 
 export default async function EnPostsPage() {

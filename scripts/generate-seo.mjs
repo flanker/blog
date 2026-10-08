@@ -69,7 +69,7 @@ function escapeXml(text) {
 // Generate sitemap.xml
 function generateSitemap(zhPosts, enPosts) {
   const urls = [
-    { loc: siteUrl, priority: "1.0", changefreq: "weekly" },
+    { loc: `${siteUrl}/`, priority: "1.0", changefreq: "weekly" },
     { loc: `${siteUrl}/posts/`, priority: "0.8", changefreq: "weekly" },
     { loc: `${siteUrl}/about/`, priority: "0.5", changefreq: "monthly" },
     { loc: `${siteUrl}/en/`, priority: "0.7", changefreq: "weekly" },

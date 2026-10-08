@@ -5,7 +5,9 @@
 }
 
 :root {
-  --font-serif: "Source Serif 4", "Noto Serif SC", ui-serif, Georgia, "Songti SC", serif;
+  /* Source Serif 4 is self-hosted via next/font (lib/fonts.ts); Chinese uses the system serif. */
+  --font-serif: var(--font-source-serif), "Noto Serif SC", "Noto Serif CJK SC", "Source Han Serif SC", "Songti SC",
+    "STSong", ui-serif, Georgia, serif;
   --font-sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
     system-ui, sans-serif;
   --font-mono: ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, monospace;
@@ -15,7 +17,7 @@
   --card: #ffffff;
   --text: #2b2822;
   --text-soft: #5c554a;
-  --text-muted: #93867a;
+  --text-muted: #71665c;
   --faint: #b0a48f;
   --rule: #e9e1d2;
   --link: #2b2822;
@@ -25,13 +27,13 @@
   --shadow-card-hover: 0 2px 4px rgba(74, 60, 34, 0.06), 0 10px 28px rgba(74, 60, 34, 0.1);
 
   --tag-oss-bg: #e7ecdc;
-  --tag-oss-text: #5c7a4e;
+  --tag-oss-text: #546f47;
   --tag-app-bg: #f5e7d1;
-  --tag-app-text: #9c682c;
+  --tag-app-text: #8c5d28;
   --tag-web-bg: #e0e9ee;
-  --tag-web-text: #4e7286;
+  --tag-web-text: #496b7e;
   --tag-extension-bg: #ece1ef;
-  --tag-extension-text: #7a5a86;
+  --tag-extension-text: #795984;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,7 +43,7 @@
     --card: #221e17;
     --text: #ece5d8;
     --text-soft: #b5aa97;
-    --text-muted: #857a67;
+    --text-muted: #938773;
     --faint: #7a705d;
     --rule: #322c22;
     --link: #ece5d8;
@@ -622,6 +624,40 @@ li {
 }
 
 /* ---------- Redirect stubs ---------- */
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 660px;
+  margin: 56px auto 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+  font-size: 15px;
+}
+
+.post-nav a {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 48%;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.post-nav a:hover .post-nav-title {
+  color: var(--accent);
+}
+
+.post-nav .post-nav-next {
+  margin-left: auto;
+  text-align: right;
+}
+
+.post-nav-label {
+  color: var(--text-muted);
+  font-size: 12px;
+}
 
 .redirect-note {
   padding: 80px 0;

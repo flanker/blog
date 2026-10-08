@@ -6,6 +6,7 @@ export const metadata = pageMetadata({
   description:
     "关于冯智超：从小喜欢计算机和编程，如今依然乐在其中。这里介绍我自己，以及在 GitHub、B 站和微信公众号上找到我的方式，新文章会同步推送到公众号。",
   path: "/about/",
+  languages: { zh: "/about/", en: "/en/about/" },
 });
 
 export default function AboutPage() {
@@ -39,7 +40,13 @@ export default function AboutPage() {
         </a>
         <div className="contact-card wide">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img className="qrcode" src="/images/assets/weixin_mp_qrcode.jpeg" alt="冯智超的公众号二维码" />
+          <img
+            className="qrcode"
+            src="/images/assets/weixin_mp_qrcode.jpeg"
+            width={96}
+            height={96}
+            loading="lazy"
+            decoding="async" alt="冯智超的公众号二维码" />
           <div>
             <div className="contact-name">微信公众号</div>
             <div className="contact-desc">所有文章都会同步到公众号，扫码订阅，第一时间收到新文章的推送。</div>

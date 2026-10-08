@@ -6,6 +6,7 @@ export const metadata = pageMetadata({
   description:
     "About Feng Zhichao: I've loved computers and programming since I was a kid, and I still do. Who I am, and where to find me on GitHub, Bilibili, and WeChat.",
   path: "/en/about/",
+  languages: { zh: "/about/", en: "/en/about/" },
 });
 
 export default function EnAboutPage() {
@@ -40,7 +41,13 @@ export default function EnAboutPage() {
         </a>
         <div className="contact-card wide">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img className="qrcode" src="/images/assets/weixin_mp_qrcode.jpeg" alt="WeChat official account QR code" />
+          <img
+            className="qrcode"
+            src="/images/assets/weixin_mp_qrcode.jpeg"
+            width={96}
+            height={96}
+            loading="lazy"
+            decoding="async" alt="WeChat official account QR code" />
           <div>
             <div className="contact-name">WeChat Official Account</div>
             <div className="contact-desc">
