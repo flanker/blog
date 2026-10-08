@@ -1,6 +1,12 @@
-export const metadata = {
-  title: "About - Feng Zhichao's Website",
-};
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  lang: "en",
+  title: "About Feng Zhichao - Feng Zhichao's Website",
+  description:
+    "About Feng Zhichao: I've loved computers and programming since I was a kid, and I still do. Who I am, and where to find me on GitHub, Bilibili, and WeChat.",
+  path: "/en/about/",
+});
 
 export default function EnAboutPage() {
   return (

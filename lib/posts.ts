@@ -16,6 +16,8 @@ export interface PostData {
   contentHtml?: string;
   category?: "post" | "draft" | "en";
   slug: string;
+  // Markdown file path relative to the repo root, e.g. "posts/2022/07-06-ask-with-context.md"
+  sourcePath: string;
 }
 
 function getAllPostsFromDirectory(directory: string, category: "post" | "draft" | "en"): PostData[] {
@@ -74,6 +76,7 @@ function getAllPostsFromDirectory(directory: string, category: "post" | "draft" 
         posts.push({
           id,
           slug,
+          sourcePath: path.relative(process.cwd(), filePath).split(path.sep).join("/"),
           category,
           title,
           date: date || "",
@@ -148,8 +151,39 @@ export async function getPostBySlug(slug: string): Promise<PostData | null> {
 
   return {
     ...post,
-    contentHtml: processedContent.toString(),
+    contentHtml: resolveRelativeUrls(processedContent.toString(), post, allPosts),
   };
+}
+
+function postUrl(post: PostData): string {
+  return post.category === "en" ? `/en/posts/${post.slug}/` : `/posts/${post.slug}/`;
+}
+
+// Markdown files reference images and other posts relative to their own location
+// (e.g. "../../images/posts/..." or "./06-11-decision-fatigue.md") so they preview in editors.
+// The same HTML is served under both /posts/ and /en/posts/, so rewrite them to absolute site URLs.
+function resolveRelativeUrls(contentHtml: string, post: PostData, allPosts: PostData[]): string {
+  const sourceDir = path.posix.dirname(post.sourcePath);
+
+  return contentHtml.replace(/\b(href|src)="([^"]+)"/g, (match, attr: string, url: string) => {
+    if (/^([a-z][a-z0-9+.-]*:|\/|#)/i.test(url)) return match;
+
+    const hashIndex = url.indexOf("#");
+    const urlPath = hashIndex === -1 ? url : url.slice(0, hashIndex);
+    const hash = hashIndex === -1 ? "" : url.slice(hashIndex);
+    const resolved = path.posix.normalize(path.posix.join(sourceDir, decodeURI(urlPath)));
+
+    if (resolved.startsWith("images/")) {
+      return `${attr}="/${encodeURI(resolved)}${hash}"`;
+    }
+
+    if (resolved.endsWith(".md")) {
+      const target = allPosts.find((p) => p.sourcePath === resolved);
+      if (target) return `${attr}="${postUrl(target)}${hash}"`;
+    }
+
+    return match;
+  });
 }
 
 export function getPostsByCategory(category: "post" | "draft" | "en"): PostData[] {
@@ -161,8 +195,8 @@ export function stripMarkdown(text: string): string {
     .replace(/^#+\s+/gm, '')        // headings
     .replace(/\*\*(.+?)\*\*/g, '$1') // bold
     .replace(/\*(.+?)\*/g, '$1')     // italic
+    .replace(/!\[([^\]]*)\]\([^)]+\)/g, '$1') // images (before links, which share the [..](..) syntax)
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // links
-    .replace(/!\[([^\]]*)\]\([^)]+\)/g, '$1') // images
     .replace(/`{1,3}[^`]*`{1,3}/g, '') // code
     .replace(/^\s*[-*+]\s+/gm, '')   // list markers
     .replace(/^\s*>\s+/gm, '')       // blockquotes

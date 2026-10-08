@@ -1,27 +1,29 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { defaultOgImage, siteNames, siteUrl } from "@/lib/seo";
 
-const siteUrl = "https://fengzhichao.me";
 const siteDescription =
   "冯智超的个人网站，记录关于 Tech Lead、工程实践与产品研发的思考与随笔。";
 
+// Site-wide fallback. Indexable pages override this with pageMetadata() from lib/seo.ts.
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "冯智超的个人网站",
+  title: siteNames.zh,
   description: siteDescription,
   openGraph: {
-    title: "冯智超的个人网站",
+    title: siteNames.zh,
     description: siteDescription,
-    url: siteUrl,
-    siteName: "冯智超的个人网站",
+    siteName: siteNames.zh,
     locale: "zh_CN",
     type: "website",
+    images: [{ url: defaultOgImage, width: 1200, height: 630, alt: siteNames.zh }],
   },
   twitter: {
-    card: "summary",
-    title: "冯智超的个人网站",
+    card: "summary_large_image",
+    title: siteNames.zh,
     description: siteDescription,
+    images: [defaultOgImage],
   },
   robots: {
     index: true,

@@ -1,4 +1,13 @@
 import ProjectGrid from "@/components/ProjectGrid";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  lang: "en",
+  title: "Feng Zhichao's Website - Tech Leadership, Engineering & Product",
+  description:
+    "Feng Zhichao builds products and writes. Small apps and tools (iOS apps, Chrome extensions, open source), plus essays on tech leadership, engineering practice, and product thinking.",
+  path: "/en/",
+});
 
 export default function EnHomePage() {
   return (

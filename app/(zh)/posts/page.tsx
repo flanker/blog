@@ -1,9 +1,14 @@
 import { getPublishedPosts } from "@/lib/posts";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 
-export const metadata = {
-  title: "写作 - 冯智超的个人网站",
-};
+export const metadata = pageMetadata({
+  lang: "zh",
+  title: "写作：技术管理、工程实践与产品思考 - 冯智超的个人网站",
+  description:
+    "冯智超的全部文章，按年份归档。主题包括 Tech Lead 与技术管理、团队协作与项目管理、工程实践与研发效能、产品思考，以及一些读书和观影笔记。",
+  path: "/posts/",
+});
 
 export default async function PostsPage() {
   const posts = getPublishedPosts();

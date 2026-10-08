@@ -1,6 +1,7 @@
 import { getPostBySlug, getAllPosts, stripMarkdown } from "@/lib/posts";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 
 interface PostPageProps {
   params: Promise<{
@@ -24,28 +25,16 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
   }
 
   const description = stripMarkdown(post.content).substring(0, 160);
-  const title = `${post.title} - 冯智超的个人网站`;
-  const url = `/posts/${slug}/`;
 
-  return {
-    title,
+  return pageMetadata({
+    lang: "zh",
+    title: `${post.title} - 冯智超的个人网站`,
+    ogTitle: post.title,
     description,
-    openGraph: {
-      title: post.title,
-      description,
-      type: "article",
-      publishedTime: post.date || undefined,
-      url,
-    },
-    twitter: {
-      card: "summary",
-      title: post.title,
-      description,
-    },
-    alternates: {
-      canonical: url,
-    },
-  };
+    path: `/posts/${slug}/`,
+    type: "article",
+    publishedTime: post.date,
+  });
 }
 
 export default async function PostPage({ params }: PostPageProps) {

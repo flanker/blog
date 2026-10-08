@@ -1,6 +1,12 @@
-export const metadata = {
-  title: "关于 - 冯智超的个人网站",
-};
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  lang: "zh",
+  title: "关于冯智超 - Tech Lead、工程实践与产品研发 - 冯智超的个人网站",
+  description:
+    "关于冯智超：从小喜欢计算机和编程，如今依然乐在其中。这里介绍我自己，以及在 GitHub、B 站和微信公众号上找到我的方式，新文章会同步推送到公众号。",
+  path: "/about/",
+});
 
 export default function AboutPage() {
   return (

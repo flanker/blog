@@ -1,9 +1,14 @@
 import { getPublishedPosts } from "@/lib/posts";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Writing - Feng Zhichao's Website",
-};
+export const metadata = pageMetadata({
+  lang: "en",
+  title: "Writing on Tech Leadership, Engineering & Product - Feng Zhichao's Website",
+  description:
+    "All of Feng Zhichao's writing, archived by year: tech leadership and team management, collaboration and project management, engineering practice, product thinking, and notes on books and films.",
+  path: "/en/posts/",
+});
 
 export default async function EnPostsPage() {
   const posts = getPublishedPosts();

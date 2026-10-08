@@ -1,6 +1,6 @@
 # How to get your PR reviewed faster
 
-[![fast](../images/20220421/glen-wheeler-gN3oQVVJDYo-unsplash_preview.jpeg)](../images/20220421/glen-wheeler-gN3oQVJDYo-unsplash.jpeg)
+[![fast](../images/posts/2022/0421/glen-wheeler-gN3oQVVJDYo-unsplash_preview.jpeg)](../images/posts/2022/0421/glen-wheeler-gN3oQVVJDYo-unsplash.jpeg)
 
 The role of Pull Request and Code Review in the engineering team is well understood. Getting PRs reviewed more quickly can improve team efficiency and reduce feedback cycles time.
 
@@ -51,7 +51,7 @@ For a 100-lines PR, I can review the code line by line.
 
 For a 10,000 lines PR, I can only reply `LGTM`.
 
-[![review the code](../images/20220421/tim-gouw-1K9T5YiZ2WU-unsplash_preview.jpeg)](../images/20220421/tim-gouw-1K9T5YiZ2WU-unsplash.jpeg)
+[![review the code](../images/posts/2022/0421/tim-gouw-1K9T5YiZ2WU-unsplash_preview.jpeg)](../images/posts/2022/0421/tim-gouw-1K9T5YiZ2WU-unsplash.jpeg)
 
 Don't include too many things in one single PR. When implementing a new feature, you might do 1) fixing a bug; 2) refactoring the code; 3) formatting a file.
 
@@ -65,7 +65,7 @@ Sometimes it's hard to split into multiple PRs. In this case, split into as many
 
 A feature may have several small tasks, each of which will have business model changes, presentation layer changes and unit tests. Usually, they are in different places.
 
-[![all in one commit vs split commits](../images/20220421/all-in-one-vs-split-commits_preview.png)](../images/20220421/all-in-one-vs-split-commits.png)
+[![all in one commit vs split commits](../images/posts/2022/0421/all-in-one-vs-split-commits_preview.png)](../images/posts/2022/0421/all-in-one-vs-split-commits.png)
 
 If you put all of them in one commit, PR reviewers will have a lot of context switching when they read the diff.
 
@@ -89,7 +89,7 @@ Before creating a PR, make sure the branch passes CI, including lint check and a
 
 1. Walk up to a colleague
 
-[![review the code](../images/20220421/mars-IgUR1iX0mqM-unsplash_preview.jpeg)](../images/20220421/mars-IgUR1iX0mqM-unsplash.jpeg)
+[![review the code](../images/posts/2022/0421/mars-IgUR1iX0mqM-unsplash_preview.jpeg)](../images/posts/2022/0421/mars-IgUR1iX0mqM-unsplash.jpeg)
 
 Although developers do not want to be disturbed at work, I still suggest that you find the right time to walk up to them. A face-to-face chat is much better than hundreds of lines of code.
 
